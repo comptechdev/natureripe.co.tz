@@ -1,5 +1,14 @@
 @extends('layouts.website')
 
 @section('content')
-    <h1>Home Page</h1>
-@endsection
+<x-website.body.slider />
+
+<div class="relative grid grid-cols-1 md:grid-cols-3  p-3 md:p-24 justify-center gap-2">
+    <x-website.body.showcase />
+    <x-website.body.showcase />
+    <x-website.body.showcase />
+</div>
+<x-website.body.section />
+
+
+@endsection   
