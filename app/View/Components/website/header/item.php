@@ -14,12 +14,12 @@ class item extends Component
     public $href;
     public $title;
     public $show;
-    public function __construct($href="#", $title="Menu", $show=false)
+    public function __construct($href="#", $title="Menu", $show="false")
     {
         //
         $this->href= $href;
         $this->title = $title;
-        $this->show = $show;
+        $this->show = $show == "false" ? false : $show;
         
     }
 
