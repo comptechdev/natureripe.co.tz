@@ -3,12 +3,12 @@
     <!-- Well begun is half done. - Aristotle -->
     <x-website.header.item title="HOT SOURCES"></x-website.header.item>
     <x-website.header.item title="RECEPIES"></x-website.header.item>
-    <x-website.header.item title="ABOUT"></x-website.header.item>
-    <div class="">
+    <x-website.header.item href="{{ route('website.about') }}" title="ABOUT"></x-website.header.item>
+    <div class="item-align-start">
         <img src="{{ asset('img/FRESH.png') }}" alt="fresh" class="h-16">
     </div>
-    <x-website.header.item title="OUR HOME"></x-website.header.item>
-    <div class="border-2 border-red-600 hover:bg-red-600 hover:text-white w-40">
+    <x-website.header.item  href="{{ route('website.home') }}" title="OUR HOME"></x-website.header.item>
+    <div class="border-2 border-red-600 hover:bg-red-600 hover:text-white w-40 text-center">
      <a href="#" class="p-2">BUY ONLINE</a>
     </div>
 

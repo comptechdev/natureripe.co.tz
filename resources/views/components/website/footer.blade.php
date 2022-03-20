@@ -3,18 +3,18 @@
     <div class="flex justify-center h-24">
         <img src="{{ asset('img/FRESH.png') }}" alt="">
     </div>
-    <div class="flex justify-center font-semibold gap-10 py-10">
-        <div class="hover:border-b-2 border-b-red-600">
-              <a href="#" >PRIVACY PILICY</a>
+    <div class="flex md:flex-row md:justify-center flex-col items-center align-baseline  sm:gap-3 font-semibold">
+        <div class="hover:border-b-2 border-b-red-600 ">
+              <a href="#">PRIVACY PILICY</a>
         </div>
-        <div class="hover:border-b-2 border-b-red-600">
+        <div class="hover:border-b-2 border-b-red-600 ">
               <a href="#">TERMS AND CONDITIONS</a>
         </div>
-        <div class="hover:border-b-2 border-b-red-600">
+        <div class="hover:border-b-2 border-b-red-600 ">
               <a href="#">OUR HOME</a>
         </div>
-        <div class="hover:border-b-2 border-b-red-600">
+        <div class="hover:border-b-2 border-b-red-600 ">
               <a href="#">ABOUT US</a>
         </div>
-    </div>
+    </div> 
 </div>
