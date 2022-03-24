@@ -1,56 +1,56 @@
+<nav class="bg-white shadow-lg">
+	<div class=" max-w-6xl mx-auto px-4">
+		<div class="flex justify-between">
+			<!-- <div flex space-x-7> -->
+				<!-- Well begun is half done. - Aristotle -->
+				<x-website.header.item title="HOT SOURCES"></x-website.header.item>
+				
+				<x-website.header.item href="{{ route('website.recepies') }}" title="RECEPIES"></x-website.header.item>
+				<div class="">
+					<a  href="{{ route('website.home') }}" class="flex items-center py-4 px-2">
+					    <img src="{{ asset('img/FRESH.png') }}" alt="fresh" class="h-16">
+					</a>
+				</div>
+				<x-website.header.item title="ABOUT US"></x-website.header.item>
+				<x-website.header.item  href="{{ route('website.our_home') }}" title="OUR HOME"></x-website.header.item>
+				
+					
+				
+				<div class="md:hidden p-2" onclick="toggleMenu()">
+					<x-svg.menu />
+				</div>
+			<!-- </div> -->
+		</div>
+	</div>
+	<div id="main_menu" class="relative bg-white shadow-lg md:hidden hidden" >
+		<div class="flex flex-col">
+			<x-website.header.item :show="true" title="HOT SOURCES"></x-website.header.item>
+			<x-website.header.item :show="true" title="ABOUT"></x-website.header.item>
+			<x-website.header.item :show="true" title="RECEPIES"></x-website.header.item>
+			<x-website.header.item href="{{ route('website.our_home') }}" :show="true" title="OUR HOME"></x-website.header.item>
+			
+		</div>
+	</div>
+	<script>
+		function toggleMenu(){
+			let menu = document.getElementById("main_menu");
+			if(menu.classList.contains("hidden")){
+				menu.classList.remove("hidden")
+			}else{
+				menu.classList.add("hidden");
+			}
+		}
+		window.addEventListener("resize", function(event) {
+			if(document.body.clientWidth > 600){
+				let menu = document.getElementById("main_menu");
+				if(menu.classList.contains("hidden")){
+					menu.remove("hidden");
+				}
+			}
+		});
+	</script>
+</nav>
 
-<div class="flex justify-center py-5 space-x-5 text-md font-semibold bg-slate-200 text-red-500 shadow-lg items-center">
-    <!-- Well begun is half done. - Aristotle -->
-    <x-website.header.item title="HOT SOURCES"></x-website.header.item>
-    <x-website.header.item title="RECEPIES"></x-website.header.item>
-    <x-website.header.item href="{{ route('website.about') }}" title="ABOUT"></x-website.header.item>
-    <div class="item-align-start">
-        <img src="{{ asset('img/FRESH.png') }}" alt="fresh" class="h-16">
-    </div>
-    <x-website.header.item  href="{{ route('website.home') }}" title="OUR HOME"></x-website.header.item>
-    <div class="border-2 border-red-600 hover:bg-red-600 hover:text-white w-40 text-center">
-     <a href="#" class="p-2">BUY ONLINE</a>
-    </div>
-
-    <div class="md:hidden flex items-center">
-	<button class="outline-none mobile-menu-button">
-		<svg
-			class="w-6 h-6 text-gray-500"
-			x-show="!showMenu"
-			fill="none"
-			stroke-linecap="round"
-			stroke-linejoin="round"
-			stroke-width="2"
-			viewBox="0 0 24 24"
-			stroke="currentColor"
-		>
-		<path d="M4 6h16M4 12h16M4 18h16"></path>
-		</svg>
-	</button>
-</div>
-<div class="hidden mobile-menu">
-	<ul class="">
-        <li><x-website.header.item title="OUR HOME" :show="true"></x-website.header.item></li>
-        <li><x-website.header.item title="OUR HOME"></x-website.header.item></li>
-        <li><x-website.header.item title="OUR HOME"></x-website.header.item></li>
-	</ul>
-</div>
 
 
-<script>
-	// Grab HTML Elements
-	const btn = document.querySelector("button.mobile-menu-button");
-	const menu = document.querySelector(".mobile-menu");
-
-	// Add Event Listeners
-	btn.addEventListener("click", () => {
-	menu.classList.toggle("hidden");
-	});
-</script>
-
-    
-
-</div>
-
-</div>
 
