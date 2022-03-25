@@ -18,4 +18,11 @@ class WebsitePagesController extends Controller
     public function contactsPage() {
         return view("website.contacts");
     }
+
+    public function ourHomePage(){
+        return view("website.our_home");
+    }
+    public function recepiesPage(){
+        return view("website.recepies");
+    }
 }

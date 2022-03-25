@@ -41,4 +41,6 @@ Route::prefix('webiste')->name('website.')->group(function () {
     Route::get('/', [WebsitePagesController::class, 'homePage'])->name("home");
     Route::get('/about', [WebsitePagesController::class, 'aboutPage'])->name("about");
     Route::get('/contacts', [WebsitePagesController::class, 'contactsPage'])->name("contacts");
+    Route::get('/our_home', [WebsitePagesController::class, 'ourHomePage'])->name("our_home");
+    Route::get('/recepies', [WebsitePagesController::class, 'recepiesPage'])->name("recepies");
 });
