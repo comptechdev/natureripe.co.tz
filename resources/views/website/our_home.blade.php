@@ -36,41 +36,43 @@
         </div>
     </div>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-5 py-20">
-    <div class="border-2 ">
-        <img src="{{ asset('img/jungle.jpg') }}" alt="jungle">
-        <div class="text-left p-5">
-            <h1 class="text-2xl font-bold">RIPE GARDENS</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-               Mollitia nostrum vel iure ratione alias obcaecati perspiciatis 
-               aperiam earum maiores natus magnam ipsam ?</p>
+<div class="container mx-auto"> 
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-5 py-20">
+        <div class="border-2 ">
+            <img src="{{ asset('img/jungle.jpg') }}" alt="jungle">
+            <div class="text-left p-5">
+                <h1 class="text-2xl font-bold">RIPE GARDENS</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Mollitia nostrum vel iure ratione alias obcaecati perspiciatis 
+                aperiam earum maiores natus magnam ipsam ?</p>
+            </div>
+            <div class="pt-10 pl-5 pb-5">
+                <button class="bg-red-600 text-white hover:bg-white hover:border-2 hover:border-red-600 hover:text-red-600 p-3">VISIT RIPE GARDENS</button>
+            </div> 
         </div>
-        <div class="pt-10 pl-5 pb-5">
-            <button class="bg-red-600 text-white hover:bg-white hover:border-2 hover:border-red-600 hover:text-red-600 p-3">VISIT RIPE GARDENS</button>
-        </div> 
-    </div>
-    <div class="border-2"> 
-        <img src="{{ asset('img/cooking.jpg') }}" alt="jungle">
-        <div class="text-left p-5">
-            <h1  class="text-2xl font-bold">RIPE COOKING</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-               Mollitia nostrum vel iure ratione alias obcaecati perspiciatis 
-               aperiam earum maiores natus magnam ipsam ?</p>
+        <div class="border-2"> 
+            <img src="{{ asset('img/cooking.jpg') }}" alt="jungle">
+            <div class="text-left p-5">
+                <h1  class="text-2xl font-bold">RIPE COOKING</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Mollitia nostrum vel iure ratione alias obcaecati perspiciatis 
+                aperiam earum maiores natus magnam ipsam ?</p>
+            </div>
+            <div class="pt-10 pl-5 pb-5">
+                <button class="bg-red-600 text-white hover:bg-white hover:border-2 hover:border-red-600 hover:text-red-600 p-3">VISIT RIPE GARDENS</button>
+            </div>
         </div>
-        <div class="pt-10 pl-5 pb-5">
-            <button class="bg-red-600 text-white hover:bg-white hover:border-2 hover:border-red-600 hover:text-red-600 p-3">VISIT RIPE GARDENS</button>
-        </div>
-    </div>
-    <div  class="border-2">
-        <img src="{{ asset('img/Culinary.jpg') }}" alt="jungle">
-        <div class="text-left p-5">
-            <h1  class="text-2xl font-bold">RIPE EXPERIENCE</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-               Mollitia nostrum vel iure ratione alias obcaecati perspiciatis 
-               aperiam earum maiores natus magnam ipsam ?</p>
-        </div>
-        <div class="pt-10 pl-5 pb-5">
-            <button class="bg-red-600 text-white hover:bg-white hover:border-2 hover:border-red-600 hover:text-red-600 p-3">VISIT RIPE GARDENS</button>
+        <div  class="border-2">
+            <img src="{{ asset('img/Culinary.jpg') }}" alt="jungle">
+            <div class="text-left p-5">
+                <h1  class="text-2xl font-bold">RIPE EXPERIENCE</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Mollitia nostrum vel iure ratione alias obcaecati perspiciatis 
+                aperiam earum maiores natus magnam ipsam ?</p>
+            </div>
+            <div class="pt-10 pl-5 pb-5">
+                <button class="bg-red-600 text-white hover:bg-white hover:border-2 hover:border-red-600 hover:text-red-600 p-3">VISIT RIPE GARDENS</button>
+            </div>
         </div>
     </div>
 </div>
