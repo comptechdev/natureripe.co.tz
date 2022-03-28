@@ -25,4 +25,7 @@ class WebsitePagesController extends Controller
     public function recepiesPage(){
         return view("website.recepies");
     }
+    public function hotSaucesPage(Request $request){
+        return view("website.hot_sauces");
+    }
 }

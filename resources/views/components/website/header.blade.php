@@ -3,7 +3,7 @@
 		<div class="flex justify-between">
 			<!-- <div flex space-x-7> -->
 				<!-- Well begun is half done. - Aristotle -->
-				<x-website.header.item title="HOT SOURCES"></x-website.header.item>
+				<x-website.header.item href="{{ route('website.hot_sauces') }}" title="HOT SOURCES"></x-website.header.item>
 				
 				<x-website.header.item href="{{ route('website.recepies') }}" title="RECEPIES"></x-website.header.item>
 				<div class="">
@@ -11,7 +11,7 @@
 					    <img src="{{ asset('img/FRESH.png') }}" alt="fresh" class="h-16">
 					</a>
 				</div>
-				<x-website.header.item title="ABOUT US"></x-website.header.item>
+				<x-website.header.item href="{{ route('website.about') }}" title="ABOUT US"></x-website.header.item>
 				<x-website.header.item  href="{{ route('website.our_home') }}" title="OUR HOME"></x-website.header.item>
 				
 					
