@@ -24,9 +24,9 @@
 	</div>
 	<div id="main_menu" class="relative bg-white shadow-lg md:hidden hidden" >
 		<div class="flex flex-col">
-			<x-website.header.item :show="true" title="HOT SOURCES"></x-website.header.item>
-			<x-website.header.item :show="true" title="ABOUT"></x-website.header.item>
-			<x-website.header.item :show="true" title="RECEPIES"></x-website.header.item>
+			<x-website.header.item :show="true" href="{{ route('website.hot_sauces') }}"  title="HOT SOURCES"></x-website.header.item>
+			<x-website.header.item :show="true" href="{{ route('website.about') }}" title="ABOUT"></x-website.header.item>
+			<x-website.header.item :show="true" href="{{ route('website.recepies') }}" title="RECEPIES"></x-website.header.item>
 			<x-website.header.item href="{{ route('website.our_home') }}" :show="true" title="OUR HOME"></x-website.header.item>
 			
 		</div>
