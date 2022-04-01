@@ -1,10 +1,7 @@
 <?php
 
-use App\Http\Controllers\WebsitePagesController;
-use Illuminate\Foundation\Application;
-use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
-use Inertia\Inertia;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,30 +15,16 @@ use Inertia\Inertia;
 */
 
 Route::get('/', function () {
-    return Inertia::render('Welcome', [
-        'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
-        'laravelVersion' => Application::VERSION,
-        'phpVersion' => PHP_VERSION,
-    ]);
+    return view('welcome');
 });
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return Inertia::render('Dashboard');
-})->name('dashboard');
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
 
-Auth::routes();
+require __DIR__.'/auth.php';
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Route::get('/', function () {
-    return to_route('website.home');
-});
-Route::prefix('webiste')->name('website.')->group(function () {
-    Route::get('/', [WebsitePagesController::class, 'homePage'])->name("home");
-    Route::get('/about', [WebsitePagesController::class, 'aboutPage'])->name("about");
-    Route::get('/contacts', [WebsitePagesController::class, 'contactsPage'])->name("contacts");
-    Route::get('/our_home', [WebsitePagesController::class, 'ourHomePage'])->name("our_home");
-    Route::get('/recepies', [WebsitePagesController::class, 'recepiesPage'])->name("recepies");
-    Route::get('/hot_sauces', [WebsitePagesController::class, 'hotSaucesPage'])->name("hot_sauces");
+Route::middleware(['auth'])->prefix("resources")->name("resources.")->group(function () {
+    Route::resource("products", ProductController::class);
+    // Route::resource("meals", []);
 });
