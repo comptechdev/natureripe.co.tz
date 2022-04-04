@@ -5,17 +5,21 @@ namespace App\View\Components\UI\Buttons;
 use App\View\Components\UI\Core\Button;
 use Illuminate\View\Component;
 
-class Elevated extends Button
+class Elevated extends Component
 {
     /**
      * Create a new component instance.
      *
      * @return void
      */
+    public $title, $href, $type;
+
     public function __construct($title=null, $href=null, $type=null)
     {
         //
-        parent::__construct($title, $href, $type);
+        $this->title = $title;
+        $this->href = $href;
+        $this->type = $type;
     }
 
     /**
@@ -25,6 +29,7 @@ class Elevated extends Button
      */
     public function render()
     {
+        
         return view('components.ui.buttons.elevated');
     }
 }
