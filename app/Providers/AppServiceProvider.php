@@ -4,7 +4,7 @@ namespace App\Providers;
 
 use App\View\Components\UI\Buttons\Elevated;
 use App\View\Components\UI\Core\Button;
-use App\View\Components\Ui\Core\Input;
+use App\View\Components\UI\Core\Input;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\ServiceProvider;
