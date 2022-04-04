@@ -34,7 +34,7 @@
                         <x-ui.core.input name="nutrition_sugers" label="Sugers" value="{{ isset($product) ? $product->nutrition_sugers : '' }}" />
                         <x-ui.core.input name="nutrition_protein" label="Protein" value="{{ isset($product) ? $product->nutrition_protein : '' }}" />
                         <x-ui.core.input name="nutrition_vitamin_c" label="Vitamin C" value="{{ isset($product) ? $product->nutrition_vitamin_c : '' }}" />
-                        <x-ui.buttons.elevated type="submit" title="Submit" />
+                        <x-ui.buttons.elevated type="submit" title="Submit" /> 
                     </form>
                 </div>
             </div>
