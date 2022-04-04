@@ -12,11 +12,11 @@ class Elevated extends Button
      *
      * @return void
      */
-    // public function __construct($title=null)
-    // {
-    //     //
-    //     parent::__construct($title);
-    // }
+    public function __construct($title=null, $href=null, $type=null)
+    {
+        //
+        parent::__construct($title, $href, $type);
+    }
 
     /**
      * Get the view / contents that represent the component.
