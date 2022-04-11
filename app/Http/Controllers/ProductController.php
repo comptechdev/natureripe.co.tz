@@ -101,8 +101,8 @@ class ProductController extends Controller
         $product->update($request->input());
 
         if ($request->hasFile("featured_image")) {
-            $path = $request->file("feature_image")->storeAs("products/featured", $product->product_id);
-            $product->featured_image = $path;
+            $path = $request->file("featured_image")->storeAs("/public/products/featured", $product->product_id);
+            $product->featured_image;
             $product->save();
         }
         DB::commit();

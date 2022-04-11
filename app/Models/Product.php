@@ -13,6 +13,12 @@ class Product extends Model
 
     protected $guarded = ['id'];
 
+    protected $appends = ["featured_image_url"];
+
+    public function getFeaturedImageUrlAttribute() {
+        return asset(str_replace("public", "storage", $this->featured_image));
+    }
+
     public static function boot() {
         parent::boot();
         static::creating(function ($model) {
