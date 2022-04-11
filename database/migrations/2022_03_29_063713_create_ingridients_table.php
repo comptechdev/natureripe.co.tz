@@ -21,6 +21,7 @@ return new class extends Migration
             $table->unsignedBigInteger("product_id")->nullable();
             $table->string("name");
             $table->string("feature_image");
+            $table->softDeletes();
             $table->timestamps();
         });
     }

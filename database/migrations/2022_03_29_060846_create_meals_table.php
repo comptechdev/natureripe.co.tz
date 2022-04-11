@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string("featured_image")->nullable();
             $table->text("description")->nullable();
             $table->text("preparation")->nullable();
+            $table->softDeletes();
             $table->timestamps();
         });
     }
