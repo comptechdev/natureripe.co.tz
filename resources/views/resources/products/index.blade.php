@@ -31,8 +31,13 @@
                                     <td>{{ $loop->iteration }}</td>
                                     <td>{{ $product->name }}</td>
                                     <td>
-                                        <a href="{{ route('resources.products.show', ['product' => $product]) }}" class="btn-sm">view</a>
-                                        <a href="{{ route('resources.products.edit', ['product' => $product]) }}" class="btn-sm">edit</a>
+                                        <form action="{{ route('resources.products.destroy', ['product' => $product]) }}" method="post">
+                                            @csrf
+                                            @method("delete")
+                                            <a href="{{ route('resources.products.show', ['product' => $product]) }}" class="btn-sm">view</a>
+                                            <a href="{{ route('resources.products.edit', ['product' => $product]) }}" class="btn-sm">edit</a>
+                                            <button type="submit" class="btn-sm">Delete</button>
+                                        </form>
                                     </td>
                                 </tr>
                             @endforeach
