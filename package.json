@@ -35,6 +35,8 @@
         "vue-loader": "^16.1.2"
     },
     "dependencies": {
+        "alpinejs": "^3.9.6",
+        "swiper": "^8.1.0",
         "tailwind-scrollbar-hide": "^1.1.7"
     }
 }
