@@ -31,6 +31,7 @@ return new class extends Migration
             $table->string("nutrition_sugers")->nullable();
             $table->string("nutrition_protein")->nullable();
             $table->string("nutrition_vitamin_c")->nullable();
+            $table->softDeletes();
             $table->timestamps();
         });
     }

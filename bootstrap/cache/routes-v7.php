@@ -99,7 +99,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::WWvibLr72YTdZtQp',
+            '_route' => 'generated::miByzfbSKImeCjCB',
           ),
           1 => NULL,
           2 => 
@@ -209,7 +209,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::5EZGAlPwWc5WWIix',
+            '_route' => 'generated::WDK63rMNi2i82cIB',
           ),
           1 => NULL,
           2 => 
@@ -266,7 +266,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::QBKYMLgMyfsLB6W1',
+            '_route' => 'generated::Pg6BwpczgLBAN7A3',
           ),
           1 => NULL,
           2 => 
@@ -339,7 +339,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::Vzzp0O9zaUbnLy4G',
+            '_route' => 'generated::JQ161sPR7SWPy09M',
           ),
           1 => NULL,
           2 => 
@@ -449,7 +449,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::pT0ckXcA6DXG4Eaf',
+            '_route' => 'generated::bEi0ulRZUC2g996A',
           ),
           1 => NULL,
           2 => 
@@ -545,7 +545,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::vjU1edPeVDJhemfp',
+            '_route' => 'generated::BNDvowdu3Ru7uhUv',
           ),
           1 => NULL,
           2 => 
@@ -565,7 +565,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::AefSoNDv6tK3LCvC',
+            '_route' => 'generated::gp0hfM78Eojn9vvQ',
           ),
           1 => NULL,
           2 => 
@@ -585,7 +585,127 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::m65RL7rRlzYAF4o5',
+            '_route' => 'generated::ercHgxAo75Gb8VLl',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/webiste' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'website.home',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/webiste/about' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'website.about',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/webiste/contacts' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'website.contacts',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/webiste/our_home' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'website.our_home',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/webiste/recepies' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'website.recepies',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/webiste/hot_sauces' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'website.hot_sauces',
           ),
           1 => NULL,
           2 => 
@@ -664,7 +784,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::BsyzB4Cm2MpoaAKd',
+            '_route' => 'generated::qMOyQ2tbGG98lClt',
           ),
           1 => NULL,
           2 => 
@@ -1037,7 +1157,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::WWvibLr72YTdZtQp' => 
+    'generated::miByzfbSKImeCjCB' => 
     array (
       'methods' => 
       array (
@@ -1058,7 +1178,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::WWvibLr72YTdZtQp',
+        'as' => 'generated::miByzfbSKImeCjCB',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1299,7 +1419,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::5EZGAlPwWc5WWIix' => 
+    'generated::WDK63rMNi2i82cIB' => 
     array (
       'methods' => 
       array (
@@ -1320,7 +1440,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::5EZGAlPwWc5WWIix',
+        'as' => 'generated::WDK63rMNi2i82cIB',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1412,7 +1532,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::QBKYMLgMyfsLB6W1' => 
+    'generated::Pg6BwpczgLBAN7A3' => 
     array (
       'methods' => 
       array (
@@ -1435,7 +1555,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::QBKYMLgMyfsLB6W1',
+        'as' => 'generated::Pg6BwpczgLBAN7A3',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1567,7 +1687,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::Vzzp0O9zaUbnLy4G' => 
+    'generated::JQ161sPR7SWPy09M' => 
     array (
       'methods' => 
       array (
@@ -1590,7 +1710,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::Vzzp0O9zaUbnLy4G',
+        'as' => 'generated::JQ161sPR7SWPy09M',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1803,7 +1923,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::pT0ckXcA6DXG4Eaf' => 
+    'generated::bEi0ulRZUC2g996A' => 
     array (
       'methods' => 
       array (
@@ -1826,7 +1946,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::pT0ckXcA6DXG4Eaf',
+        'as' => 'generated::bEi0ulRZUC2g996A',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1999,7 +2119,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::vjU1edPeVDJhemfp' => 
+    'generated::BNDvowdu3Ru7uhUv' => 
     array (
       'methods' => 
       array (
@@ -2020,7 +2140,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 'web',
         ),
-        'as' => 'generated::vjU1edPeVDJhemfp',
+        'as' => 'generated::BNDvowdu3Ru7uhUv',
       ),
       'fallback' => false,
       'defaults' => 
@@ -2036,7 +2156,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::AefSoNDv6tK3LCvC' => 
+    'generated::gp0hfM78Eojn9vvQ' => 
     array (
       'methods' => 
       array (
@@ -2059,7 +2179,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::AefSoNDv6tK3LCvC',
+        'as' => 'generated::gp0hfM78Eojn9vvQ',
       ),
       'fallback' => false,
       'defaults' => 
@@ -2075,7 +2195,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::m65RL7rRlzYAF4o5' => 
+    'generated::ercHgxAo75Gb8VLl' => 
     array (
       'methods' => 
       array (
@@ -2089,15 +2209,237 @@ app('router')->setCompiledRoutes(
         array (
           0 => 'web',
         ),
-        'uses' => 'O:47:"Laravel\\SerializableClosure\\SerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Signed":2:{s:12:"serializable";s:262:"O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:44:"function () {
-    return \\view(\'welcome\');
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000005310000000000000000";}";s:4:"hash";s:44:"JqzTlavXf0X3OwfsjFkvYRbjC3CngwD58Yk967OB/yk=";}}',
+        'uses' => 'O:47:"Laravel\\SerializableClosure\\SerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Signed":2:{s:12:"serializable";s:271:"O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:53:"function () {
+    return \\to_route(\'website.home\');
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000005310000000000000000";}";s:4:"hash";s:44:"tU6aCXG8O4EyMf+qoN50zS87u5iU5CIZUwqVI3yeqk0=";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
         array (
         ),
-        'as' => 'generated::m65RL7rRlzYAF4o5',
+        'as' => 'generated::ercHgxAo75Gb8VLl',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'website.home' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'webiste',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\WebsitePagesController@homePage',
+        'controller' => 'App\\Http\\Controllers\\WebsitePagesController@homePage',
+        'as' => 'website.home',
+        'namespace' => NULL,
+        'prefix' => '/webiste',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'website.about' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'webiste/about',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\WebsitePagesController@aboutPage',
+        'controller' => 'App\\Http\\Controllers\\WebsitePagesController@aboutPage',
+        'as' => 'website.about',
+        'namespace' => NULL,
+        'prefix' => '/webiste',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'website.contacts' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'webiste/contacts',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\WebsitePagesController@contactsPage',
+        'controller' => 'App\\Http\\Controllers\\WebsitePagesController@contactsPage',
+        'as' => 'website.contacts',
+        'namespace' => NULL,
+        'prefix' => '/webiste',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'website.our_home' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'webiste/our_home',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\WebsitePagesController@ourHomePage',
+        'controller' => 'App\\Http\\Controllers\\WebsitePagesController@ourHomePage',
+        'as' => 'website.our_home',
+        'namespace' => NULL,
+        'prefix' => '/webiste',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'website.recepies' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'webiste/recepies',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\WebsitePagesController@recepiesPage',
+        'controller' => 'App\\Http\\Controllers\\WebsitePagesController@recepiesPage',
+        'as' => 'website.recepies',
+        'namespace' => NULL,
+        'prefix' => '/webiste',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'website.hot_sauces' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'webiste/hot_sauces',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\WebsitePagesController@hotSaucesPage',
+        'controller' => 'App\\Http\\Controllers\\WebsitePagesController@hotSaucesPage',
+        'as' => 'website.hot_sauces',
+        'namespace' => NULL,
+        'prefix' => '/webiste',
+        'where' => 
+        array (
+        ),
       ),
       'fallback' => false,
       'defaults' => 
@@ -2268,7 +2610,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::BsyzB4Cm2MpoaAKd' => 
+    'generated::qMOyQ2tbGG98lClt' => 
     array (
       'methods' => 
       array (
@@ -2289,7 +2631,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::BsyzB4Cm2MpoaAKd',
+        'as' => 'generated::qMOyQ2tbGG98lClt',
       ),
       'fallback' => false,
       'defaults' => 
