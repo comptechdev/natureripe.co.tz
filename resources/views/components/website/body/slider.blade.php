@@ -80,7 +80,6 @@
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <img src="/img/s1a.jpg" alt="">
-        
         </div>
         <div class="swiper-slide"><img src="/img/s1b.jpg" alt=""></div>
         <div class="swiper-slide"><img src="/img/s1c.jpg" alt=""></div>
@@ -100,11 +99,15 @@
     <!-- Initialize Swiper -->
     <script>
       var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 30,
+        slidesPerView: 1,
+        speed: 1,
+        spaceBetween: 0,
         slidesPerGroup: 3,
         loop: true,
         loopFillGroupWithBlank: true,
+        autoplay: {
+          delay: 5000,
+        },
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
@@ -113,6 +116,13 @@
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
+        breakpoints: {
+        640: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+          spaceBetween: 0,
+          },
+        }
       });
     </script>
   </body>
