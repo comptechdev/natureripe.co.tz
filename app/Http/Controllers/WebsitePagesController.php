@@ -28,4 +28,10 @@ class WebsitePagesController extends Controller
     public function hotSaucesPage(Request $request){
         return view("website.hot_sauces");
     }
+    public function saucePage(Request $request){
+        return view("website.sauce");
+    }
+    public function mealPage(Request $request){
+        return view("website.meal");
+    }
 }

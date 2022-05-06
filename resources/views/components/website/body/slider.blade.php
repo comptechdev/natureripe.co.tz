@@ -78,10 +78,7 @@
     <!-- Swiper -->
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="/img/s1a.jpg" alt="">
-        
-        </div>
+        <div class="swiper-slide"><img src="/img/s1a.jpg" alt=""></div>
         <div class="swiper-slide"><img src="/img/s1b.jpg" alt=""></div>
         <div class="swiper-slide"><img src="/img/s1c.jpg" alt=""></div>
         <div class="swiper-slide"><img src="/img/s2a.jpg" alt=""></div>
