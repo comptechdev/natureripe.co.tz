@@ -38,4 +38,6 @@ require __DIR__.'/auth.php';
 Route::middleware(['auth'])->prefix("resources")->name("resources.")->group(function () {
     Route::resource("products", ProductController::class);
     // Route::resource("meals", []);
+    Route::get('/sauce', [WebsitePagesController::class, 'saucePage'])->name("sauce");
+    Route::get('/meal', [WebsitePagesController::class, 'mealPage'])->name("meal");
 });

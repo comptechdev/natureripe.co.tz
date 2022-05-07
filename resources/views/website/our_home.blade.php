@@ -4,7 +4,7 @@
 <div class="flex flex-col items-center h-1/4">
     <img src="{{ asset('img/Main.jpg') }}" alt="1516404" class="w-full">
     <div class="absolute text-center w-3/4 pt-7 md:pt-28 text-white ">
-        <h1 class="text-center text-xl md:text-7xl font-black">NATURE RIPE </br>KILIMANJARO LIMITED hhhh</h1>
+        <h1 class="text-center text-xl md:text-7xl font-black">NATURE RIPE </br>KILIMANJARO LIMITED</h1>
         <p class="text-center text-sm md:text-2xl pt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum sunt in quis libero cum aspernatur
              ipsam. Sapiente nesciunt, veritatis deserunt architecto nobis incidunt ad blanditiis rerum quas 
              nam in fugiat!</p> 
