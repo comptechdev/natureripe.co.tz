@@ -99,7 +99,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::miByzfbSKImeCjCB',
+            '_route' => 'generated::zQKhqF0QINiSfWiv',
           ),
           1 => NULL,
           2 => 
@@ -209,7 +209,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::WDK63rMNi2i82cIB',
+            '_route' => 'generated::6fVSpgrEC6LTTQvP',
           ),
           1 => NULL,
           2 => 
@@ -266,7 +266,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::Pg6BwpczgLBAN7A3',
+            '_route' => 'generated::ByeYWPVqzUJJjJvW',
           ),
           1 => NULL,
           2 => 
@@ -339,7 +339,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::JQ161sPR7SWPy09M',
+            '_route' => 'generated::uoUF1eaHrxxAQvcU',
           ),
           1 => NULL,
           2 => 
@@ -449,7 +449,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::bEi0ulRZUC2g996A',
+            '_route' => 'generated::vI4UHtDRjMD56ydJ',
           ),
           1 => NULL,
           2 => 
@@ -545,7 +545,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::BNDvowdu3Ru7uhUv',
+            '_route' => 'generated::p1KEKRdUV5LzhKlE',
           ),
           1 => NULL,
           2 => 
@@ -565,7 +565,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::gp0hfM78Eojn9vvQ',
+            '_route' => 'generated::0poGpyll9XHoyNuB',
           ),
           1 => NULL,
           2 => 
@@ -585,7 +585,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::ercHgxAo75Gb8VLl',
+            '_route' => 'generated::CQEDVPYqshRr5QmB',
           ),
           1 => NULL,
           2 => 
@@ -719,6 +719,46 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
+      '/webiste/sauce' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'website.sauce',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/webiste/meal' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'website.meal',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
       '/dashboard' => 
       array (
         0 => 
@@ -784,7 +824,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::qMOyQ2tbGG98lClt',
+            '_route' => 'generated::ZoPP0dVJgq9g3tAh',
           ),
           1 => NULL,
           2 => 
@@ -853,10 +893,66 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
+      '/resources/meals' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'resources.meals.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'resources.meals.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/resources/meals/create' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'resources.meals.create',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
     ),
     2 => 
     array (
-      0 => '{^(?|/res(?|et\\-password/([^/]++)(*:35)|ources/products/([^/]++)(?|(*:69)|/edit(*:81)|(*:88)))|/verify\\-email/([^/]++)/([^/]++)(*:129))/?$}sDu',
+      0 => '{^(?|/res(?|et\\-password/([^/]++)(*:35)|ources/(?|products/([^/]++)(?|(*:72)|/edit(*:84)|(*:91))|meals/([^/]++)(?|(*:116)|/edit(*:129)|(*:137))))|/verify\\-email/([^/]++)/([^/]++)(*:180))/?$}sDu',
     ),
     3 => 
     array (
@@ -883,7 +979,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      69 => 
+      72 => 
       array (
         0 => 
         array (
@@ -906,7 +1002,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      81 => 
+      84 => 
       array (
         0 => 
         array (
@@ -929,7 +1025,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      88 => 
+      91 => 
       array (
         0 => 
         array (
@@ -971,7 +1067,95 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
+      116 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'resources.meals.show',
+          ),
+          1 => 
+          array (
+            0 => 'meal',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
       129 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'resources.meals.edit',
+          ),
+          1 => 
+          array (
+            0 => 'meal',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      137 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'resources.meals.update',
+          ),
+          1 => 
+          array (
+            0 => 'meal',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'resources.meals.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'meal',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      180 => 
       array (
         0 => 
         array (
@@ -1157,7 +1341,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::miByzfbSKImeCjCB' => 
+    'generated::zQKhqF0QINiSfWiv' => 
     array (
       'methods' => 
       array (
@@ -1178,7 +1362,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::miByzfbSKImeCjCB',
+        'as' => 'generated::zQKhqF0QINiSfWiv',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1419,7 +1603,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::WDK63rMNi2i82cIB' => 
+    'generated::6fVSpgrEC6LTTQvP' => 
     array (
       'methods' => 
       array (
@@ -1440,7 +1624,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::WDK63rMNi2i82cIB',
+        'as' => 'generated::6fVSpgrEC6LTTQvP',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1532,7 +1716,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::Pg6BwpczgLBAN7A3' => 
+    'generated::ByeYWPVqzUJJjJvW' => 
     array (
       'methods' => 
       array (
@@ -1555,7 +1739,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::Pg6BwpczgLBAN7A3',
+        'as' => 'generated::ByeYWPVqzUJJjJvW',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1687,7 +1871,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::JQ161sPR7SWPy09M' => 
+    'generated::uoUF1eaHrxxAQvcU' => 
     array (
       'methods' => 
       array (
@@ -1710,7 +1894,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::JQ161sPR7SWPy09M',
+        'as' => 'generated::uoUF1eaHrxxAQvcU',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1923,7 +2107,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::bEi0ulRZUC2g996A' => 
+    'generated::vI4UHtDRjMD56ydJ' => 
     array (
       'methods' => 
       array (
@@ -1946,7 +2130,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::bEi0ulRZUC2g996A',
+        'as' => 'generated::vI4UHtDRjMD56ydJ',
       ),
       'fallback' => false,
       'defaults' => 
@@ -2119,7 +2303,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::BNDvowdu3Ru7uhUv' => 
+    'generated::p1KEKRdUV5LzhKlE' => 
     array (
       'methods' => 
       array (
@@ -2140,7 +2324,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 'web',
         ),
-        'as' => 'generated::BNDvowdu3Ru7uhUv',
+        'as' => 'generated::p1KEKRdUV5LzhKlE',
       ),
       'fallback' => false,
       'defaults' => 
@@ -2156,7 +2340,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::gp0hfM78Eojn9vvQ' => 
+    'generated::0poGpyll9XHoyNuB' => 
     array (
       'methods' => 
       array (
@@ -2179,7 +2363,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::gp0hfM78Eojn9vvQ',
+        'as' => 'generated::0poGpyll9XHoyNuB',
       ),
       'fallback' => false,
       'defaults' => 
@@ -2195,7 +2379,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::ercHgxAo75Gb8VLl' => 
+    'generated::CQEDVPYqshRr5QmB' => 
     array (
       'methods' => 
       array (
@@ -2217,7 +2401,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::ercHgxAo75Gb8VLl',
+        'as' => 'generated::CQEDVPYqshRr5QmB',
       ),
       'fallback' => false,
       'defaults' => 
@@ -2455,6 +2639,80 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
+    'website.sauce' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'webiste/sauce',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\WebsitePagesController@saucePage',
+        'controller' => 'App\\Http\\Controllers\\WebsitePagesController@saucePage',
+        'as' => 'website.sauce',
+        'namespace' => NULL,
+        'prefix' => '/webiste',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'website.meal' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'webiste/meal',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\WebsitePagesController@mealPage',
+        'controller' => 'App\\Http\\Controllers\\WebsitePagesController@mealPage',
+        'as' => 'website.meal',
+        'namespace' => NULL,
+        'prefix' => '/webiste',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
     'dashboard' => 
     array (
       'methods' => 
@@ -2610,7 +2868,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::qMOyQ2tbGG98lClt' => 
+    'generated::ZoPP0dVJgq9g3tAh' => 
     array (
       'methods' => 
       array (
@@ -2631,7 +2889,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::qMOyQ2tbGG98lClt',
+        'as' => 'generated::ZoPP0dVJgq9g3tAh',
       ),
       'fallback' => false,
       'defaults' => 
@@ -2891,6 +3149,270 @@ app('router')->setCompiledRoutes(
         'as' => 'resources.products.destroy',
         'uses' => 'App\\Http\\Controllers\\ProductController@destroy',
         'controller' => 'App\\Http\\Controllers\\ProductController@destroy',
+        'namespace' => NULL,
+        'prefix' => '/resources',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'resources.meals.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'resources/meals',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+        ),
+        'as' => 'resources.meals.index',
+        'uses' => 'App\\Http\\Controllers\\MealController@index',
+        'controller' => 'App\\Http\\Controllers\\MealController@index',
+        'namespace' => NULL,
+        'prefix' => '/resources',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'resources.meals.create' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'resources/meals/create',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+        ),
+        'as' => 'resources.meals.create',
+        'uses' => 'App\\Http\\Controllers\\MealController@create',
+        'controller' => 'App\\Http\\Controllers\\MealController@create',
+        'namespace' => NULL,
+        'prefix' => '/resources',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'resources.meals.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'resources/meals',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+        ),
+        'as' => 'resources.meals.store',
+        'uses' => 'App\\Http\\Controllers\\MealController@store',
+        'controller' => 'App\\Http\\Controllers\\MealController@store',
+        'namespace' => NULL,
+        'prefix' => '/resources',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'resources.meals.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'resources/meals/{meal}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+        ),
+        'as' => 'resources.meals.show',
+        'uses' => 'App\\Http\\Controllers\\MealController@show',
+        'controller' => 'App\\Http\\Controllers\\MealController@show',
+        'namespace' => NULL,
+        'prefix' => '/resources',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'resources.meals.edit' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'resources/meals/{meal}/edit',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+        ),
+        'as' => 'resources.meals.edit',
+        'uses' => 'App\\Http\\Controllers\\MealController@edit',
+        'controller' => 'App\\Http\\Controllers\\MealController@edit',
+        'namespace' => NULL,
+        'prefix' => '/resources',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'resources.meals.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'resources/meals/{meal}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+        ),
+        'as' => 'resources.meals.update',
+        'uses' => 'App\\Http\\Controllers\\MealController@update',
+        'controller' => 'App\\Http\\Controllers\\MealController@update',
+        'namespace' => NULL,
+        'prefix' => '/resources',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'resources.meals.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'resources/meals/{meal}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+        ),
+        'as' => 'resources.meals.destroy',
+        'uses' => 'App\\Http\\Controllers\\MealController@destroy',
+        'controller' => 'App\\Http\\Controllers\\MealController@destroy',
         'namespace' => NULL,
         'prefix' => '/resources',
         'where' => 

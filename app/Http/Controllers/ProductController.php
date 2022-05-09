@@ -42,13 +42,15 @@ class ProductController extends Controller
         //
         $request->validate([
             "name" => "required",
+            "featured_image" => "image",
         ]);
 
         DB::beginTransaction();
         $product = Product::create(array_merge($request->input()));
 
         if ($request->hasFile("featured_image")) {
-            $path = $request->file("feature_image")->storeAs("products/featured", $product->product_id);
+            $fileName = time().'.'.$request->file("featured_image")->extension();  
+            $path = $request->file("featured_image")->storeAs("products/featured", $fileName, "public");
             $product->featured_image = $path;
             $product->save();
         }
