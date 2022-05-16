@@ -42,16 +42,42 @@ class ProductController extends Controller
         //
         $request->validate([
             "name" => "required",
+            "featured_image" => "image",
         ]);
 
         DB::beginTransaction();
         $product = Product::create(array_merge($request->input()));
 
         if ($request->hasFile("featured_image")) {
-            $path = $request->file("feature_image")->storeAs("products/featured", $product->product_id);
+            $fileName = time().'.'.$request->file("featured_image")->extension();  
+            $path = $request->file("featured_image")->storeAs("products/featured", $fileName, "public");
             $product->featured_image = $path;
-            $product->save();
         }
+
+        if ($request->hasFile("product_image_transparent")) {
+            $fileName = time().'.'.$request->file("product_image_transparent")->extension();  
+            $path = $request->file("product_image_transparent")->storeAs("products/featured", $fileName, "public");
+            $product->product_image_transparent = $path;
+        }
+
+        if ($request->hasFile("background_texture")) {
+            $fileName = time().'.'.$request->file("background_texture")->extension();  
+            $path = $request->file("background_texture")->storeAs("products/featured", $fileName, "public");
+            $product->background_texture = $path;
+        }
+
+        if ($request->hasFile("background_color")) {
+            $fileName = time().'.'.$request->file("background_color")->extension();  
+            $path = $request->file("background_color")->storeAs("products/featured", $fileName, "public");
+            $product->background_color = $path;
+        }
+
+        if ($request->hasFile("featured_meal_picture")) {
+            $fileName = time().'.'.$request->file("featured_meal_picture")->extension();  
+            $path = $request->file("featured_meal_picture")->storeAs("products/featured", $fileName, "public");
+            $product->featured_meal_picture = $path;
+        }
+        $product->save();
         DB::commit();
 
         $request->flash("status", "Product Created Successfull");
@@ -92,19 +118,44 @@ class ProductController extends Controller
      */
     public function update(Request $request, Product $product)
     {
-         //
          $request->validate([
             "name" => "required",
+            "featured_image" => "image",
         ]);
 
         DB::beginTransaction();
         $product->update($request->input());
 
         if ($request->hasFile("featured_image")) {
-            $path = $request->file("featured_image")->storeAs("/public/products/featured", $product->product_id);
-            $product->featured_image;
-            $product->save();
+            $fileName = time().'.'.$request->file("featured_image")->extension();  
+            $path = $request->file("featured_image")->storeAs("products/featured", $fileName, "public");
+            $product->featured_image = $path;
         }
+
+        if ($request->hasFile("product_image_transparent")) {
+            $fileName = time().'.'.$request->file("product_image_transparent")->extension();  
+            $path = $request->file("product_image_transparent")->storeAs("products/featured", $fileName, "public");
+            $product->product_image_transparent = $path;
+        }
+
+        if ($request->hasFile("background_texture")) {
+            $fileName = time().'.'.$request->file("background_texture")->extension();  
+            $path = $request->file("background_texture")->storeAs("products/featured", $fileName, "public");
+            $product->background_texture = $path;
+        }
+
+        if ($request->hasFile("background_color")) {
+            $fileName = time().'.'.$request->file("background_color")->extension();  
+            $path = $request->file("background_color")->storeAs("products/featured", $fileName, "public");
+            $product->background_color = $path;
+        }
+
+        if ($request->hasFile("featured_meal_picture")) {
+            $fileName = time().'.'.$request->file("featured_meal_picture")->extension();  
+            $path = $request->file("featured_meal_picture")->storeAs("products/featured", $fileName, "public");
+            $product->featured_meal_picture = $path;
+        }
+        $product->save();
         DB::commit();
 
         $request->flash("status", "Product Updated Successfull");

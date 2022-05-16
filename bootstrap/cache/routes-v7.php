@@ -99,7 +99,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::miByzfbSKImeCjCB',
+            '_route' => 'generated::2tGOlbl7hV9469wR',
           ),
           1 => NULL,
           2 => 
@@ -209,7 +209,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::WDK63rMNi2i82cIB',
+            '_route' => 'generated::24ZbjSHmjB60S4uN',
           ),
           1 => NULL,
           2 => 
@@ -266,7 +266,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::Pg6BwpczgLBAN7A3',
+            '_route' => 'generated::l8pFcs1NYFWBMvf9',
           ),
           1 => NULL,
           2 => 
@@ -339,7 +339,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::JQ161sPR7SWPy09M',
+            '_route' => 'generated::GNXGgpIRVwWoryAm',
           ),
           1 => NULL,
           2 => 
@@ -449,7 +449,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::bEi0ulRZUC2g996A',
+            '_route' => 'generated::pgn2glBlwfqAqRYi',
           ),
           1 => NULL,
           2 => 
@@ -545,7 +545,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::BNDvowdu3Ru7uhUv',
+            '_route' => 'generated::5gtrxn8wLYBsNgDx',
           ),
           1 => NULL,
           2 => 
@@ -565,7 +565,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::gp0hfM78Eojn9vvQ',
+            '_route' => 'generated::vJl8hRZX8Vr9Y7mD',
           ),
           1 => NULL,
           2 => 
@@ -585,7 +585,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::ercHgxAo75Gb8VLl',
+            '_route' => 'generated::FWGfO73JUUF1uNc7',
           ),
           1 => NULL,
           2 => 
@@ -784,7 +784,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::qMOyQ2tbGG98lClt',
+            '_route' => 'generated::Yf20OcDSxmC8L467',
           ),
           1 => NULL,
           2 => 
@@ -853,10 +853,66 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
+      '/resources/meals' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'resources.meals.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'resources.meals.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/resources/meals/create' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'resources.meals.create',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
     ),
     2 => 
     array (
-      0 => '{^(?|/res(?|et\\-password/([^/]++)(*:35)|ources/products/([^/]++)(?|(*:69)|/edit(*:81)|(*:88)))|/verify\\-email/([^/]++)/([^/]++)(*:129))/?$}sDu',
+      0 => '{^(?|/res(?|et\\-password/([^/]++)(*:35)|ources/(?|products/([^/]++)(?|(*:72)|/edit(*:84)|(*:91))|meals/([^/]++)(?|(*:116)|/(?|edit(*:132)|ingridients(?|(*:154)|/(?|create(*:172)|([^/]++)(?|(*:191)|/edit(*:204)|(*:212)))|(*:222))|products(?|(*:242)|/(?|create(*:260)|([^/]++)(?|(*:279)|/edit(*:292)|(*:300)))|(*:310)))|(*:320))))|/webiste/(?|sauce/([^/]++)(*:357)|meal/([^/]++)(*:378))|/verify\\-email/([^/]++)/([^/]++)(*:419))/?$}sDu',
     ),
     3 => 
     array (
@@ -883,7 +939,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      69 => 
+      72 => 
       array (
         0 => 
         array (
@@ -906,7 +962,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      81 => 
+      84 => 
       array (
         0 => 
         array (
@@ -929,7 +985,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      88 => 
+      91 => 
       array (
         0 => 
         array (
@@ -971,7 +1027,461 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      129 => 
+      116 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'resources.meals.show',
+          ),
+          1 => 
+          array (
+            0 => 'meal',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      132 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'resources.meals.edit',
+          ),
+          1 => 
+          array (
+            0 => 'meal',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      154 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'resources.meals.ingridients.index',
+          ),
+          1 => 
+          array (
+            0 => 'meal',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      172 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'resources.meals.ingridients.create',
+          ),
+          1 => 
+          array (
+            0 => 'meal',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      191 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'resources.meals.ingridients.show',
+          ),
+          1 => 
+          array (
+            0 => 'meal',
+            1 => 'ingridient',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      204 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'resources.meals.ingridients.edit',
+          ),
+          1 => 
+          array (
+            0 => 'meal',
+            1 => 'ingridient',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      212 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'resources.meals.ingridients.update',
+          ),
+          1 => 
+          array (
+            0 => 'meal',
+            1 => 'ingridient',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'resources.meals.ingridients.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'meal',
+            1 => 'ingridient',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      222 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'resources.meals.ingridients.store',
+          ),
+          1 => 
+          array (
+            0 => 'meal',
+          ),
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      242 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'resources.meals.products.index',
+          ),
+          1 => 
+          array (
+            0 => 'meal',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      260 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'resources.meals.products.create',
+          ),
+          1 => 
+          array (
+            0 => 'meal',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      279 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'resources.meals.products.show',
+          ),
+          1 => 
+          array (
+            0 => 'meal',
+            1 => 'product',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      292 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'resources.meals.products.edit',
+          ),
+          1 => 
+          array (
+            0 => 'meal',
+            1 => 'product',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      300 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'resources.meals.products.update',
+          ),
+          1 => 
+          array (
+            0 => 'meal',
+            1 => 'product',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'resources.meals.products.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'meal',
+            1 => 'product',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      310 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'resources.meals.products.store',
+          ),
+          1 => 
+          array (
+            0 => 'meal',
+          ),
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      320 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'resources.meals.update',
+          ),
+          1 => 
+          array (
+            0 => 'meal',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'resources.meals.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'meal',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      357 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'website.sauce',
+          ),
+          1 => 
+          array (
+            0 => 'product',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      378 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'website.meal',
+          ),
+          1 => 
+          array (
+            0 => 'meal',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      419 => 
       array (
         0 => 
         array (
@@ -1157,7 +1667,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::miByzfbSKImeCjCB' => 
+    'generated::2tGOlbl7hV9469wR' => 
     array (
       'methods' => 
       array (
@@ -1178,7 +1688,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::miByzfbSKImeCjCB',
+        'as' => 'generated::2tGOlbl7hV9469wR',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1419,7 +1929,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::WDK63rMNi2i82cIB' => 
+    'generated::24ZbjSHmjB60S4uN' => 
     array (
       'methods' => 
       array (
@@ -1440,7 +1950,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::WDK63rMNi2i82cIB',
+        'as' => 'generated::24ZbjSHmjB60S4uN',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1532,7 +2042,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::Pg6BwpczgLBAN7A3' => 
+    'generated::l8pFcs1NYFWBMvf9' => 
     array (
       'methods' => 
       array (
@@ -1555,7 +2065,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::Pg6BwpczgLBAN7A3',
+        'as' => 'generated::l8pFcs1NYFWBMvf9',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1687,7 +2197,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::JQ161sPR7SWPy09M' => 
+    'generated::GNXGgpIRVwWoryAm' => 
     array (
       'methods' => 
       array (
@@ -1710,7 +2220,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::JQ161sPR7SWPy09M',
+        'as' => 'generated::GNXGgpIRVwWoryAm',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1923,7 +2433,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::bEi0ulRZUC2g996A' => 
+    'generated::pgn2glBlwfqAqRYi' => 
     array (
       'methods' => 
       array (
@@ -1946,7 +2456,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::bEi0ulRZUC2g996A',
+        'as' => 'generated::pgn2glBlwfqAqRYi',
       ),
       'fallback' => false,
       'defaults' => 
@@ -2119,7 +2629,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::BNDvowdu3Ru7uhUv' => 
+    'generated::5gtrxn8wLYBsNgDx' => 
     array (
       'methods' => 
       array (
@@ -2140,7 +2650,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 'web',
         ),
-        'as' => 'generated::BNDvowdu3Ru7uhUv',
+        'as' => 'generated::5gtrxn8wLYBsNgDx',
       ),
       'fallback' => false,
       'defaults' => 
@@ -2156,7 +2666,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::gp0hfM78Eojn9vvQ' => 
+    'generated::vJl8hRZX8Vr9Y7mD' => 
     array (
       'methods' => 
       array (
@@ -2179,7 +2689,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::gp0hfM78Eojn9vvQ',
+        'as' => 'generated::vJl8hRZX8Vr9Y7mD',
       ),
       'fallback' => false,
       'defaults' => 
@@ -2195,7 +2705,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::ercHgxAo75Gb8VLl' => 
+    'generated::FWGfO73JUUF1uNc7' => 
     array (
       'methods' => 
       array (
@@ -2217,7 +2727,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::ercHgxAo75Gb8VLl',
+        'as' => 'generated::FWGfO73JUUF1uNc7',
       ),
       'fallback' => false,
       'defaults' => 
@@ -2455,6 +2965,80 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
+    'website.sauce' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'webiste/sauce/{product}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\WebsitePagesController@saucePage',
+        'controller' => 'App\\Http\\Controllers\\WebsitePagesController@saucePage',
+        'as' => 'website.sauce',
+        'namespace' => NULL,
+        'prefix' => '/webiste',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'website.meal' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'webiste/meal/{meal}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\WebsitePagesController@mealPage',
+        'controller' => 'App\\Http\\Controllers\\WebsitePagesController@mealPage',
+        'as' => 'website.meal',
+        'namespace' => NULL,
+        'prefix' => '/webiste',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
     'dashboard' => 
     array (
       'methods' => 
@@ -2610,7 +3194,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::qMOyQ2tbGG98lClt' => 
+    'generated::Yf20OcDSxmC8L467' => 
     array (
       'methods' => 
       array (
@@ -2631,7 +3215,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::qMOyQ2tbGG98lClt',
+        'as' => 'generated::Yf20OcDSxmC8L467',
       ),
       'fallback' => false,
       'defaults' => 
@@ -2891,6 +3475,798 @@ app('router')->setCompiledRoutes(
         'as' => 'resources.products.destroy',
         'uses' => 'App\\Http\\Controllers\\ProductController@destroy',
         'controller' => 'App\\Http\\Controllers\\ProductController@destroy',
+        'namespace' => NULL,
+        'prefix' => '/resources',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'resources.meals.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'resources/meals',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+        ),
+        'as' => 'resources.meals.index',
+        'uses' => 'App\\Http\\Controllers\\MealController@index',
+        'controller' => 'App\\Http\\Controllers\\MealController@index',
+        'namespace' => NULL,
+        'prefix' => '/resources',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'resources.meals.create' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'resources/meals/create',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+        ),
+        'as' => 'resources.meals.create',
+        'uses' => 'App\\Http\\Controllers\\MealController@create',
+        'controller' => 'App\\Http\\Controllers\\MealController@create',
+        'namespace' => NULL,
+        'prefix' => '/resources',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'resources.meals.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'resources/meals',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+        ),
+        'as' => 'resources.meals.store',
+        'uses' => 'App\\Http\\Controllers\\MealController@store',
+        'controller' => 'App\\Http\\Controllers\\MealController@store',
+        'namespace' => NULL,
+        'prefix' => '/resources',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'resources.meals.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'resources/meals/{meal}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+        ),
+        'as' => 'resources.meals.show',
+        'uses' => 'App\\Http\\Controllers\\MealController@show',
+        'controller' => 'App\\Http\\Controllers\\MealController@show',
+        'namespace' => NULL,
+        'prefix' => '/resources',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'resources.meals.edit' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'resources/meals/{meal}/edit',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+        ),
+        'as' => 'resources.meals.edit',
+        'uses' => 'App\\Http\\Controllers\\MealController@edit',
+        'controller' => 'App\\Http\\Controllers\\MealController@edit',
+        'namespace' => NULL,
+        'prefix' => '/resources',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'resources.meals.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'resources/meals/{meal}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+        ),
+        'as' => 'resources.meals.update',
+        'uses' => 'App\\Http\\Controllers\\MealController@update',
+        'controller' => 'App\\Http\\Controllers\\MealController@update',
+        'namespace' => NULL,
+        'prefix' => '/resources',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'resources.meals.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'resources/meals/{meal}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+        ),
+        'as' => 'resources.meals.destroy',
+        'uses' => 'App\\Http\\Controllers\\MealController@destroy',
+        'controller' => 'App\\Http\\Controllers\\MealController@destroy',
+        'namespace' => NULL,
+        'prefix' => '/resources',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'resources.meals.ingridients.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'resources/meals/{meal}/ingridients',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+        ),
+        'as' => 'resources.meals.ingridients.index',
+        'uses' => 'App\\Http\\Controllers\\MealIngredientController@index',
+        'controller' => 'App\\Http\\Controllers\\MealIngredientController@index',
+        'namespace' => NULL,
+        'prefix' => '/resources',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'resources.meals.ingridients.create' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'resources/meals/{meal}/ingridients/create',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+        ),
+        'as' => 'resources.meals.ingridients.create',
+        'uses' => 'App\\Http\\Controllers\\MealIngredientController@create',
+        'controller' => 'App\\Http\\Controllers\\MealIngredientController@create',
+        'namespace' => NULL,
+        'prefix' => '/resources',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'resources.meals.ingridients.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'resources/meals/{meal}/ingridients',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+        ),
+        'as' => 'resources.meals.ingridients.store',
+        'uses' => 'App\\Http\\Controllers\\MealIngredientController@store',
+        'controller' => 'App\\Http\\Controllers\\MealIngredientController@store',
+        'namespace' => NULL,
+        'prefix' => '/resources',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'resources.meals.ingridients.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'resources/meals/{meal}/ingridients/{ingridient}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+        ),
+        'as' => 'resources.meals.ingridients.show',
+        'uses' => 'App\\Http\\Controllers\\MealIngredientController@show',
+        'controller' => 'App\\Http\\Controllers\\MealIngredientController@show',
+        'namespace' => NULL,
+        'prefix' => '/resources',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'resources.meals.ingridients.edit' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'resources/meals/{meal}/ingridients/{ingridient}/edit',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+        ),
+        'as' => 'resources.meals.ingridients.edit',
+        'uses' => 'App\\Http\\Controllers\\MealIngredientController@edit',
+        'controller' => 'App\\Http\\Controllers\\MealIngredientController@edit',
+        'namespace' => NULL,
+        'prefix' => '/resources',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'resources.meals.ingridients.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'resources/meals/{meal}/ingridients/{ingridient}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+        ),
+        'as' => 'resources.meals.ingridients.update',
+        'uses' => 'App\\Http\\Controllers\\MealIngredientController@update',
+        'controller' => 'App\\Http\\Controllers\\MealIngredientController@update',
+        'namespace' => NULL,
+        'prefix' => '/resources',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'resources.meals.ingridients.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'resources/meals/{meal}/ingridients/{ingridient}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+        ),
+        'as' => 'resources.meals.ingridients.destroy',
+        'uses' => 'App\\Http\\Controllers\\MealIngredientController@destroy',
+        'controller' => 'App\\Http\\Controllers\\MealIngredientController@destroy',
+        'namespace' => NULL,
+        'prefix' => '/resources',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'resources.meals.products.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'resources/meals/{meal}/products',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+        ),
+        'as' => 'resources.meals.products.index',
+        'uses' => 'App\\Http\\Controllers\\ProductMealController@index',
+        'controller' => 'App\\Http\\Controllers\\ProductMealController@index',
+        'namespace' => NULL,
+        'prefix' => '/resources',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'resources.meals.products.create' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'resources/meals/{meal}/products/create',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+        ),
+        'as' => 'resources.meals.products.create',
+        'uses' => 'App\\Http\\Controllers\\ProductMealController@create',
+        'controller' => 'App\\Http\\Controllers\\ProductMealController@create',
+        'namespace' => NULL,
+        'prefix' => '/resources',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'resources.meals.products.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'resources/meals/{meal}/products',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+        ),
+        'as' => 'resources.meals.products.store',
+        'uses' => 'App\\Http\\Controllers\\ProductMealController@store',
+        'controller' => 'App\\Http\\Controllers\\ProductMealController@store',
+        'namespace' => NULL,
+        'prefix' => '/resources',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'resources.meals.products.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'resources/meals/{meal}/products/{product}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+        ),
+        'as' => 'resources.meals.products.show',
+        'uses' => 'App\\Http\\Controllers\\ProductMealController@show',
+        'controller' => 'App\\Http\\Controllers\\ProductMealController@show',
+        'namespace' => NULL,
+        'prefix' => '/resources',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'resources.meals.products.edit' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'resources/meals/{meal}/products/{product}/edit',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+        ),
+        'as' => 'resources.meals.products.edit',
+        'uses' => 'App\\Http\\Controllers\\ProductMealController@edit',
+        'controller' => 'App\\Http\\Controllers\\ProductMealController@edit',
+        'namespace' => NULL,
+        'prefix' => '/resources',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'resources.meals.products.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'resources/meals/{meal}/products/{product}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+        ),
+        'as' => 'resources.meals.products.update',
+        'uses' => 'App\\Http\\Controllers\\ProductMealController@update',
+        'controller' => 'App\\Http\\Controllers\\ProductMealController@update',
+        'namespace' => NULL,
+        'prefix' => '/resources',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'resources.meals.products.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'resources/meals/{meal}/products/{product}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+        ),
+        'as' => 'resources.meals.products.destroy',
+        'uses' => 'App\\Http\\Controllers\\ProductMealController@destroy',
+        'controller' => 'App\\Http\\Controllers\\ProductMealController@destroy',
         'namespace' => NULL,
         'prefix' => '/resources',
         'where' => 

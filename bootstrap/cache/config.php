@@ -4,7 +4,7 @@
     'name' => 'Laravel',
     'env' => 'local',
     'debug' => true,
-    'url' => 'http://natureripe.test',
+    'url' => '127.0.0.1:8000',
     'asset_url' => NULL,
     'timezone' => 'UTC',
     'locale' => 'en',
@@ -367,7 +367,7 @@
       array (
         'driver' => 'local',
         'root' => '/Users/Mark/Desktop/clients/Peach Technology/dev/websites/natureripe/storage/app/public',
-        'url' => 'http://natureripe.test/storage',
+        'url' => '127.0.0.1:8000/storage',
         'visibility' => 'public',
         'throw' => false,
       ),
@@ -670,7 +670,7 @@
       2 => '127.0.0.1',
       3 => '127.0.0.1:8000',
       4 => '::1',
-      5 => 'natureripe.test',
+      5 => '127.0.0.1:8000',
     ),
     'guard' => 
     array (

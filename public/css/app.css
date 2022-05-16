@@ -550,7 +550,6 @@ select {
 [type='file']:focus {
   outline: 1px auto -webkit-focus-ring-color;
 }
-
     h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }

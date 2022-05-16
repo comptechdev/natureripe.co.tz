@@ -18,6 +18,7 @@ return new class extends Migration
             $table->uuid("product_id");
             $table->string("name");
             $table->string("featured_image")->nullable();
+            $table->string("product_image_transparent")->nullable();
             $table->text("description")->nullable();
             $table->string("nutrition_unit")->nullable();
             $table->string("nutrition_calories")->nullable();
@@ -31,6 +32,11 @@ return new class extends Migration
             $table->string("nutrition_sugers")->nullable();
             $table->string("nutrition_protein")->nullable();
             $table->string("nutrition_vitamin_c")->nullable();
+            $table->boolean("show_in_slider")->default(false);
+            $table->string("background_texture")->nullable();
+            $table->string("background_color")->nullable();
+            $table->string("featured_meal_picture")->nullable();
+            $table->text("poster_message")->nullable();
             $table->softDeletes();
             $table->timestamps();
         });

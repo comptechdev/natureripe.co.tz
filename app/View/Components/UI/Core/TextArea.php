@@ -1,23 +1,24 @@
 <?php
 
-namespace App\View\Components\website\body;
+namespace App\View\Components\UI\Core;
 
-use App\Models\Product;
 use Illuminate\View\Component;
 
-class slider extends Component
+class TextArea extends Component
 {
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public $products;
+    public $name, $label, $value;
 
-    public function __construct()
+    public function __construct($name=null, $label=null, $value=null)
     {
         //
-        $this->products = Product::all();
+        $this->name = $name??"";
+        $this->label = $label;
+        $this->value = $value;
     }
 
     /**
@@ -27,6 +28,6 @@ class slider extends Component
      */
     public function render()
     {
-        return view('components.website.body.slider');
+        return view('components.ui.core.text-area');
     }
 }

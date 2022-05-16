@@ -1,6 +1,9 @@
 <?php
 
+use App\Http\Controllers\MealController;
+use App\Http\Controllers\MealIngredientController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ProductMealController;
 use App\Http\Controllers\WebsitePagesController;
 use Illuminate\Support\Facades\Route;
 
@@ -25,6 +28,9 @@ Route::prefix('webiste')->name('website.')->group(function () {
     Route::get('/our_home', [WebsitePagesController::class, 'ourHomePage'])->name("our_home");
     Route::get('/recepies', [WebsitePagesController::class, 'recepiesPage'])->name("recepies");
     Route::get('/hot_sauces', [WebsitePagesController::class, 'hotSaucesPage'])->name("hot_sauces");
+
+    Route::get('/sauce/{product}', [WebsitePagesController::class, 'saucePage'])->name("sauce");
+    Route::get('/meal/{meal}', [WebsitePagesController::class, 'mealPage'])->name("meal");
 });
 
 
@@ -37,7 +43,7 @@ require __DIR__.'/auth.php';
 
 Route::middleware(['auth'])->prefix("resources")->name("resources.")->group(function () {
     Route::resource("products", ProductController::class);
-    // Route::resource("meals", []);
-    Route::get('/sauce', [WebsitePagesController::class, 'saucePage'])->name("sauce");
-    Route::get('/meal', [WebsitePagesController::class, 'mealPage'])->name("meal");
+    Route::resource("meals", MealController::class);
+    Route::resource("meals.ingridients", MealIngredientController::class);
+    Route::resource("meals.products", ProductMealController::class);
 });

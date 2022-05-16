@@ -77,8 +77,25 @@
   <body>
     <!-- Swiper -->
     <div class="swiper mySwiper">
+      
       <div class="swiper-wrapper">
-        <div class="swiper-slide">
+        @foreach ($products as $product)
+          <div class="swiper-slide">
+            <div class="flex w-full">
+                <div class="h-96 flex-1 bg-center bg-cover bg-no-repeat flex items-center" style="background-image: url('{{ Storage::url($product->background_texture)  }}')">  
+                    <div class="px-10">
+                        {!! $product->poster_message !!}  
+                    </div>
+                </div>
+                <div class="h-96 flex-1 bg-center bg-cover bg-no-repeat" style="background-image: url('{{ Storage::url($product->background_color)  }}')">
+                    <img src="{{ Storage::url($product->product_image_transparent) }}" alt="" class="h-full" />
+                </div>
+                <div class="h-96 flex-1 bg-center bg-cover bg-no-repeat" style="background-image: url('{{ Storage::url($product->featured_meal_picture) }}')">
+                </div>
+            </div>
+          </div>
+        @endforeach
+        {{-- <div class="swiper-slide">
           <img src="/img/s1a.jpg" alt="">
         </div>
         <div class="swiper-slide"><img src="/img/s1b.jpg" alt=""></div>
@@ -88,7 +105,7 @@
         <div class="swiper-slide"><img src="/img/s2c.jpg" alt=""></div>
         <div class="swiper-slide"><img src="/img/s3a.jpg" alt=""></div>
         <div class="swiper-slide"><img src="/img/s3b.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="/img/s3c.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="/img/s3c.jpg" alt=""></div> --}}
       </div>
       <div class="swiper-pagination"></div>
     </div>
@@ -102,7 +119,7 @@
         slidesPerView: 1,
         speed: 1,
         spaceBetween: 0,
-        slidesPerGroup: 3,
+        slidesPerGroup: 1,
         loop: true,
         loopFillGroupWithBlank: true,
         autoplay: {
@@ -118,7 +135,7 @@
         },
         breakpoints: {
         640: {
-          slidesPerView: 3,
+          slidesPerView: 1,
           spaceBetween: 20,
           spaceBetween: 0,
           },

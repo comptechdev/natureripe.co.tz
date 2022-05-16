@@ -17,10 +17,10 @@ return new class extends Migration
             $table->id();
             $table->uuid("ingridient_id");
             $table->unsignedBigInteger("ingridientable_id")->nullable();
-            $table->unsignedBigInteger("ingridientable_type")->nullable();
+            $table->string("ingridientable_type")->nullable();
             $table->unsignedBigInteger("product_id")->nullable();
             $table->string("name");
-            $table->string("feature_image");
+            $table->string("feature_image")->nullable();
             $table->softDeletes();
             $table->timestamps();
         });

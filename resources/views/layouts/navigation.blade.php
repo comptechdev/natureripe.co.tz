@@ -24,7 +24,7 @@
                 </div>
 
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :active="request()->routeIs('meals')">
+                    <x-nav-link :href="route('resources.meals.index')" :active="request()->routeIs('meals')">
                         {{ __('Meals') }}
                     </x-nav-link>
                 </div>

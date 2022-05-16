@@ -1,23 +1,19 @@
 <?php
 
-namespace App\View\Components\website\body;
+namespace App\View\Components\Head;
 
-use App\Models\Product;
 use Illuminate\View\Component;
 
-class slider extends Component
+class tinymceConfig extends Component
 {
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public $products;
-
     public function __construct()
     {
         //
-        $this->products = Product::all();
     }
 
     /**
@@ -27,6 +23,6 @@ class slider extends Component
      */
     public function render()
     {
-        return view('components.website.body.slider');
+        return view('components.head.tinymce-config');
     }
 }
