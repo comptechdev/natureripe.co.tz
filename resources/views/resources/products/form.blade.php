@@ -20,7 +20,8 @@
                         @isset($product)
                             @method("patch")
                         @endisset
-                        <x-ui.core.input type="file" name="featured_image" label="Product Image" />
+                        <x-ui.core.input type="file" name="product_image_transparent" label="Product Image Transparent" />
+                        <x-ui.core.input type="file" name="featured_image" label="Product Image With Background" />
                         <x-ui.core.input name="name" label="Product Name" value="{{ isset($product) ? $product->name : '' }}" />
                         <x-ui.core.input name="description" label="Description" value="{{ isset($product) ? $product->description : '' }}" />
                         <x-ui.core.input name="nutrition_unit" label="Nutrition Unit of Meansurement" value="{{ isset($product) ? $product->nutrition_unit : '' }}" />
@@ -34,6 +35,13 @@
                         <x-ui.core.input name="nutrition_sugers" label="Sugers" value="{{ isset($product) ? $product->nutrition_sugers : '' }}" />
                         <x-ui.core.input name="nutrition_protein" label="Protein" value="{{ isset($product) ? $product->nutrition_protein : '' }}" />
                         <x-ui.core.input name="nutrition_vitamin_c" label="Vitamin C" value="{{ isset($product) ? $product->nutrition_vitamin_c : '' }}" />
+
+                        <h3>Slider Configurations</h3>
+                        <x-ui.core.input type="file" name="background_texture" label="Background Texture" />
+                        <x-ui.core.input type="file" name="background_color" label="Background Color" />
+                        <x-ui.core.input type="file" name="featured_meal_picture" label="Featured Meal Picture" />
+                        <x-ui.core.text-area name="poster_message" label="Poster Message" value="{!! isset($product) ? $product->poster_message : '' !!}" />
+
                         <x-ui.buttons.elevated type="submit" title="Submit" /> 
                     </form>
                 </div>

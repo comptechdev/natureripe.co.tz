@@ -2,6 +2,7 @@
 
 namespace App\View\Components\website\body;
 
+use App\Models\Meal;
 use Illuminate\View\Component;
 
 class section extends Component
@@ -11,9 +12,11 @@ class section extends Component
      *
      * @return void
      */
+    public $meals;
     public function __construct()
     {
         //
+        $this->meals = Meal::paginate();
     }
 
     /**

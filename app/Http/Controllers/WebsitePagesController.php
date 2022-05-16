@@ -2,13 +2,17 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Meal;
+use App\Models\Product;
 use Illuminate\Http\Request;
 
 class WebsitePagesController extends Controller
 {
     //
     public function homePage() {
-        return view("website.home");
+        $products = Product::all();
+        $meals = Meal::all();
+        return view("website.home", compact("meals", "products"));
     }
 
     public function aboutPage() {
@@ -28,10 +32,10 @@ class WebsitePagesController extends Controller
     public function hotSaucesPage(Request $request){
         return view("website.hot_sauces");
     }
-    public function saucePage(Request $request){
-        return view("website.sauce");
+    public function saucePage(Request $request, Product $product){
+        return view("website.sauce", compact("product"));
     }
-    public function mealPage(Request $request){
-        return view("website.meal");
+    public function mealPage(Request $request, Meal $meal){
+        return view("website.meal", compact("meal"));
     }
 }

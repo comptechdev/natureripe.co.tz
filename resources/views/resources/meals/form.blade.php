@@ -23,8 +23,8 @@
                         <x-ui.core.input type="file" name="featured_image" label="Meal Image" />
                         <x-ui.core.input name="name" label="Meal Name" value="{{ isset($meal) ? $meal->name : '' }}" />
                         
-                        <x-ui.core.text-area name="descriptin" label="Description" value="{{ isset($meal) ? $meal->description : '' }}" />
-                        <x-ui.core.text-area name="preparation" label="Preparation" value="{{ isset($meal) ? $meal->preparation : '' }}" />
+                        <x-ui.core.text-area name="description" label="Description" value="{!! isset($meal) ? $meal->description : '' !!}" />
+                        <x-ui.core.text-area name="preparation" label="Preparation" value="{!! isset($meal) ? $meal->preparation : '' !!}" />
                         <x-ui.buttons.elevated type="submit" title="Submit" /> 
                     </form>
                 </div>

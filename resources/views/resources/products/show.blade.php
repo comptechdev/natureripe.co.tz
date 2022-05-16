@@ -11,8 +11,9 @@
                 <div class="p-6 bg-white border-b border-gray-200">
                     {{-- <p>{{ $product->featured_image_url }}</p> --}}
                     <div class="columns-3">
-                        <img src="{{ $product->featured_image_url }}" alt="" class="w-full">
-
+                        <img src="{{ Storage::url($product->product_image_transparent) }}" alt="" class="w-60" />
+                        <img src="{{ $product->featured_image_url }}" alt="" class="w-60" />
+                        
                         <div class="space-y-2">
                             <div>
                                 <h6>Product Name</h6>
@@ -84,6 +85,20 @@
                         <div>
                             <h6>Nutrition Vitamin C</h6>
                             <p>{{ $product->nutrition_vitamin_c }}</p>
+                        </div>
+                    </div>
+
+                    <h3 class="mt-10">Slider Preview</h3>
+                    <div class="flex w-full">
+                        <div class="h-96 flex-1 bg-center bg-cover bg-no-repeat flex items-center" style="background-image: url('{{ Storage::url($product->background_texture)  }}')">  
+                            <div class="px-10">
+                                {!! $product->poster_message !!}  
+                            </div>
+                        </div>
+                        <div class="h-96 flex-1 bg-center bg-cover bg-no-repeat flex items-center justify-center" style="background-image: url('{{ Storage::url($product->background_color)  }}')">
+                            <img src="{{ Storage::url($product->product_image_transparent) }}" alt="" class="h-full" />
+                        </div>
+                        <div class="h-96 flex-1 bg-center bg-cover bg-no-repeat" style="background-image: url('{{ Storage::url($product->featured_meal_picture) }}')">
                         </div>
                     </div>
                 </div>

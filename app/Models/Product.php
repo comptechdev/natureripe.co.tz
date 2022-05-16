@@ -28,4 +28,8 @@ class Product extends Model
             $model->product_id = (string) Str::uuid();
         });
     }
+
+    public function meals() {
+        return $this->hasManyThrough(Meal::class, ProductMeal::class);
+    }
 }

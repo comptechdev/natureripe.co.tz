@@ -68,9 +68,10 @@ class MealController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Meal $meal)
     {
         //
+        return view("resources.meals.show", compact("meal"));
     }
 
     /**
@@ -79,9 +80,10 @@ class MealController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Meal $meal)
     {
         //
+        return view("resources.meals.form", compact("meal"));
     }
 
     /**
@@ -91,9 +93,28 @@ class MealController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Meal $meal)
     {
         //
+        $request->validate([
+            "name" => "required",
+            "featured_image" => "image",
+        ]);
+
+        DB::beginTransaction();
+        $meal->update(array_merge($request->input()));
+
+        if ($request->hasFile("featured_image")) {
+            $fileName = time().'.'.$request->file("featured_image")->extension();  
+            $path = $request->file("featured_image")->storeAs("meals/featured", $fileName, "public");
+            $meal->featured_image = $path;
+            $meal->save();
+        }
+        DB::commit();
+
+        $request->flash("status", "Meal Updated Successfull");
+
+        return redirect(route("resources.meals.index"));
     }
 
     /**
@@ -102,8 +123,10 @@ class MealController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Meal $meal)
     {
         //
+        $meal->delete();
+        return redirect(route("resources.meals.index"));
     }
 }

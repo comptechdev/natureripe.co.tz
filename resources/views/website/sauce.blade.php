@@ -5,11 +5,8 @@
      <div class="grid grid-cols-7">
          <div class="col-span-2">&nbsp;</div>
          <div class="col-span-5 py-48 px-10">
-             <h1 class="text-start text-xl md:text-7xl font-black">NATURERIPE KILIMANJARO LIMITED</h1>
-             <p class="text-start text-2xl py-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                 Nemo, sunt rerum quidem accusantium eaque aspernatur iste dolores 
-                 exercitationem consectetur porro magnam quos voluptatum, ratione,
-                  maxime id a odit iusto fugit?</p>
+             <h1 class="text-start text-xl md:text-7xl font-black">{{ $product->name }}</h1>
+             <p class="text-start text-2xl py-5">{{ $product->description }}</p>
          </div>
      </div>
 </div>

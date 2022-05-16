@@ -2,6 +2,7 @@
 
 namespace App\View\Components\website\body;
 
+use App\Models\Product;
 use Illuminate\View\Component;
 
 class slider extends Component
@@ -11,9 +12,12 @@ class slider extends Component
      *
      * @return void
      */
+    public $products;
+
     public function __construct()
     {
         //
+        $this->products = Product::all();
     }
 
     /**
