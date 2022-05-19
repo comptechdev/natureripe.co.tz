@@ -1,6 +1,6 @@
 <div>
     <div class="max-w-sm rounded overflow-hidden flex flex-col items-center">
-        <img src="{{ Storage::url($product->featured_meal_picture) }}" alt="staffedpappers">
+        <img src="{{ Storage::url($product->featured_image) }}" alt="staffedpappers">
         <div class="relative  -mt-16 w-11/12 ">                    
             <div class="p-3 bg-white shadow-lg px-4 pb-8 rounded-md">
                 <h2>
