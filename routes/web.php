@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CommandsController;
 use App\Http\Controllers\MealController;
 use App\Http\Controllers\MealIngredientController;
 use App\Http\Controllers\ProductController;
@@ -31,6 +32,11 @@ Route::prefix('webiste')->name('website.')->group(function () {
 
     Route::get('/sauce/{product}', [WebsitePagesController::class, 'saucePage'])->name("sauce");
     Route::get('/meal/{meal}', [WebsitePagesController::class, 'mealPage'])->name("meal");
+});
+
+Route::prefix('commands')->name('commands.')->group(function () {
+    Route::get('/migrate', [CommandsController::class, 'migrate'])->name("migrate");
+    Route::get('/optimize', [CommandsController::class, 'optimize'])->name("optimize");
 });
 
 
