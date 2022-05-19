@@ -8,27 +8,27 @@
     }
 
     h1 {
-        @apply text-5xl;
+        @apply text-5xl !important;
     }
 
     h2 {
-        @apply text-2xl;
+        @apply text-2xl !important;
     }
 
     h3 {
-        @apply text-xl;
+        @apply text-xl !important;
     }
 
     h4 {
-        @apply text-lg;
+        @apply text-lg !important;
     }
 
     h5 {
-        @apply text-base;
+        @apply text-base !important;
     }
 
     h6 {
-        @apply text-xs;
+        @apply text-xs !important;
     }
 
     table {

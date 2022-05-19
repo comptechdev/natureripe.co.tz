@@ -56,25 +56,25 @@ class ProductController extends Controller
 
         if ($request->hasFile("product_image_transparent")) {
             $fileName = time().'.'.$request->file("product_image_transparent")->extension();  
-            $path = $request->file("product_image_transparent")->storeAs("products/featured", $fileName, "public");
+            $path = $request->file("product_image_transparent")->storeAs("products/transparent", $fileName, "public");
             $product->product_image_transparent = $path;
         }
 
         if ($request->hasFile("background_texture")) {
             $fileName = time().'.'.$request->file("background_texture")->extension();  
-            $path = $request->file("background_texture")->storeAs("products/featured", $fileName, "public");
+            $path = $request->file("background_texture")->storeAs("products/texture", $fileName, "public");
             $product->background_texture = $path;
         }
 
         if ($request->hasFile("background_color")) {
             $fileName = time().'.'.$request->file("background_color")->extension();  
-            $path = $request->file("background_color")->storeAs("products/featured", $fileName, "public");
+            $path = $request->file("background_color")->storeAs("products/background", $fileName, "public");
             $product->background_color = $path;
         }
 
         if ($request->hasFile("featured_meal_picture")) {
             $fileName = time().'.'.$request->file("featured_meal_picture")->extension();  
-            $path = $request->file("featured_meal_picture")->storeAs("products/featured", $fileName, "public");
+            $path = $request->file("featured_meal_picture")->storeAs("products/meal", $fileName, "public");
             $product->featured_meal_picture = $path;
         }
         $product->save();
