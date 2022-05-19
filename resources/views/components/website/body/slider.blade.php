@@ -1,7 +1,12 @@
 <div class="relative" style="background: pink; height: 70vh;" x-data="{index: 0}" 
-    x-init="$nextTick(() => { setInterval(() => {
-        console.log('timout', index, {{ $products->count() }});
-        if (index < {{ $products->count() - 1 }}) {
+    x-init="$nextTick(() => { 
+      let count = {{ isset($products) ? $products->count() : -1 }};
+      if (count == -1) {
+        return;
+      }
+      setInterval(() => {  
+        console.log('timout', index, count);
+        if (index < count) {
           index++;
         } else {
           index = 0;
