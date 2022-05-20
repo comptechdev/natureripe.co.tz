@@ -21,8 +21,8 @@
                     {!! $product->poster_message !!}  
                 </div>
             </div>
-            <div class="flex-1 bg-center bg-cover bg-no-repeat" style="background-image: url('{{ Storage::url($product->background_color)  }}')">
-                <img src="{{ Storage::url($product->product_image_transparent) }}" alt="" class="h-full" />
+            <div class="flex-1 bg-center bg-cover bg-no-repeat flex justify-center items-center" style="background-image: url('{{ Storage::url($product->background_color)  }}')">
+                <img src="{{ Storage::url($product->product_image_transparent) }}" alt="" class="h-full" style="height: 50vh" />
             </div>
             <div class="flex-1 bg-center bg-cover bg-no-repeat" style="background-image: url('{{ Storage::url($product->featured_meal_picture) }}')">
             </div>
@@ -33,7 +33,7 @@
     <div class="absolute bottom-0 z-10 flex w-full justify-center">
       @isset($products)
         @foreach ($products as $product)
-          <img x-on:click="index = {{ $loop->index }}" src="{{ Storage::url($product->product_image_transparent) }}" alt="" class="h-20 w-20 transition-all ease-in-out duration-1000 transform" x-bind:style="index == {{ $loop->index }} && 'transform: scale(2)'" />
+          <img x-on:click="index = {{ $loop->index }}" src="{{ Storage::url($product->product_image_transparent) }}" alt="" class="h-20 transition-all ease-in-out duration-1000 transform" x-bind:style="index == {{ $loop->index }} && 'transform: scale(2)'" />
         @endforeach
       @endisset
     </div>
