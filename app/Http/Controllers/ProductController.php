@@ -183,6 +183,35 @@ class ProductController extends Controller
             $path = $request->file("featured_meal_picture")->storeAs("products/featured", $fileName, "public");
             $product->featured_meal_picture = $path;
         }
+
+        if ($request->hasFile("picture_one")) {
+            $fileName = time().'.'.$request->file("picture_one")->extension();  
+            $product_name = $product->name;
+            $path = $request->file("picture_one")->storeAs("products/$product_name/slides", $fileName, "public");
+            $product->picture_one = $path;
+        }
+
+        if ($request->hasFile("picture_two")) {
+            $fileName = time().'.'.$request->file("picture_two")->extension();  
+            $product_name = $product->name;
+            $path = $request->file("picture_two")->storeAs("products/$product_name/slides", $fileName, "public");
+            $product->picture_two = $path;
+        }
+
+        if ($request->hasFile("picture_three")) {
+            $fileName = time().'.'.$request->file("picture_three")->extension();  
+            $product_name = $product->name;
+            $path = $request->file("picture_three")->storeAs("products/$product_name/slides", $fileName, "public");
+            $product->picture_three = $path;
+        }
+
+        if ($request->hasFile("picture_four")) {
+            $fileName = time().'.'.$request->file("picture_four")->extension();  
+            $product_name = $product->name;
+            $path = $request->file("picture_four")->storeAs("products/$product_name/slides", $fileName, "public");
+            $product->picture_four = $path;
+        }
+        
         $product->save();
         DB::commit();
 
