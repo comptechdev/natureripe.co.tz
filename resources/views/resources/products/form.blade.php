@@ -37,10 +37,11 @@
                         <x-ui.core.input name="nutrition_vitamin_c" label="Vitamin C" value="{{ isset($product) ? $product->nutrition_vitamin_c : '' }}" />
 
                         <h3>Slider Configurations</h3>
-                        <x-ui.core.input type="file" name="background_texture" label="Background Texture" />
-                        <x-ui.core.input type="file" name="background_color" label="Background Color" />
-                        <x-ui.core.input type="file" name="featured_meal_picture" label="Featured Meal Picture" />
-                        <x-ui.core.text-area name="poster_message" label="Poster Message" value="{!! isset($product) ? $product->poster_message : '' !!}" />
+                        <x-ui.core.input type="file" name="picture_one" label="Picture 1" />
+                        <x-ui.core.input type="file" name="picture_two" label="Picture 2" />
+                        <x-ui.core.input type="file" name="picture_three" label="Picture 3" />
+                        <x-ui.core.input type="file" name="picture_four" label="Picture 4" />
+                        {{-- <x-ui.core.text-area name="poster_message" label="Poster Message" value="{!! isset($product) ? $product->poster_message : '' !!}" /> --}}
 
                         <x-ui.buttons.elevated type="submit" title="Submit" /> 
                     </form>
