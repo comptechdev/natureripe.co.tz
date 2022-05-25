@@ -90,16 +90,20 @@
 
                     <h3 class="mt-10">Slider Preview</h3>
                     <div class="flex w-full">
-                        <div class="h-96 flex-1 bg-center bg-cover bg-no-repeat flex items-center" style="background-image: url('{{ Storage::url($product->background_texture)  }}')">  
-                            <div class="px-10">
-                                {!! $product->poster_message !!}  
-                            </div>
+                        <div class="h-96 flex-1 bg-center bg-cover bg-no-repeat flex items-center justify-center" style="background-image: url('{{ Storage::url($product->background_color)  }}')">
+                            <img src="{{ Storage::url($product->picture_one) }}" alt="" class="h-full" />
                         </div>
                         <div class="h-96 flex-1 bg-center bg-cover bg-no-repeat flex items-center justify-center" style="background-image: url('{{ Storage::url($product->background_color)  }}')">
-                            <img src="{{ Storage::url($product->product_image_transparent) }}" alt="" class="h-full" />
+                            <img src="{{ Storage::url($product->picture_two) }}" alt="" class="h-full" />
                         </div>
-                        <div class="h-96 flex-1 bg-center bg-cover bg-no-repeat" style="background-image: url('{{ Storage::url($product->featured_meal_picture) }}')">
+                        <div class="h-96 flex-1 bg-center bg-cover bg-no-repeat flex items-center justify-center" style="background-image: url('{{ Storage::url($product->background_color)  }}')">
+                            <img src="{{ Storage::url($product->picture_three) }}" alt="" class="h-full" />
                         </div>
+                    </div>
+
+                    <h3 class="mt-10">Slider Preview - Mobile</h3>
+                    <div class="h-96 flex-1 bg-center bg-cover bg-no-repeat flex items-center justify-center" style="background-image: url('{{ Storage::url($product->background_color)  }}')">
+                        <img src="{{ Storage::url($product->picture_four) }}" alt="" class="h-full" />
                     </div>
                 </div>
             </div>
