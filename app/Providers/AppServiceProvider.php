@@ -5,6 +5,7 @@ namespace App\Providers;
 use App\View\Components\UI\Buttons\Elevated;
 use App\View\Components\UI\Core\Button;
 use App\View\Components\UI\Core\Input;
+use App\View\Components\website\about\recepies;
 use App\View\Components\website\body\section;
 use App\View\Components\website\body\slider;
 use Illuminate\Support\Facades\Blade;
@@ -26,6 +27,7 @@ class AppServiceProvider extends ServiceProvider
         Blade::component("ui.core.input", Input::class);
         Blade::component("website.body.slider", slider::class);
         Blade::component("website.body.section", section::class);
+        Blade::component("website.about.recepies", recepies::class);
     }
 
     /**

@@ -23,6 +23,7 @@
                         <x-ui.core.input type="file" name="product_image_transparent" label="Product Image Transparent" />
                         <x-ui.core.input type="file" name="featured_image" label="Product Image With Background" />
                         <x-ui.core.input name="name" label="Product Name" value="{{ isset($product) ? $product->name : '' }}" />
+                        <x-ui.core.input name="color" label="Product Color" value="{{ isset($product) ? $product->color : '' }}" />
                         <x-ui.core.input name="description" label="Description" value="{{ isset($product) ? $product->description : '' }}" />
                         <x-ui.core.input name="nutrition_unit" label="Nutrition Unit of Meansurement" value="{{ isset($product) ? $product->nutrition_unit : '' }}" />
                         <x-ui.core.input name="nutrition_calories" label="Calories" value="{{ isset($product) ? $product->nutrition_calories : '' }}" />

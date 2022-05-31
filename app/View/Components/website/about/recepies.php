@@ -18,7 +18,8 @@ class recepies extends Component
     public $descriptionstyle;
     public $bottle;
     public $height;
-    public function __construct($background = null,$title="Title",$titlestyle="",$description="",$descriptionstyle="",$bottle="",$height="")
+    public $href;
+    public function __construct($background = null,$title="Title",$titlestyle="",$description="",$descriptionstyle="",$bottle="",$height="", $href="#")
     {
         //
         $this->background = $background;
@@ -28,6 +29,7 @@ class recepies extends Component
         $this->descriptionstyle = $descriptionstyle;
         $this->bottle = $bottle == "" ? asset('img/bt1.png') : $bottle;
         $this->height = $height;
+        $this->href = $href??"#";
     }
 
     /**

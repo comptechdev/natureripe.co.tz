@@ -27,7 +27,8 @@ class WebsitePagesController extends Controller
         return view("website.our_home");
     }
     public function recepiesPage(){
-        return view("website.recepies");
+        $products = Product::all();
+        return view("website.recepies", compact("products"));
     }
     public function hotSaucesPage(Request $request){
         return view("website.hot_sauces");
