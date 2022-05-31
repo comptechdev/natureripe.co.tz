@@ -13,15 +13,15 @@ x-init="$nextTick(() => {
     }
   }, 10000); 
 })">
-  <div class="relative overflow-hidden h-96">
+  <div class="relative overflow-hidden h-100">
     @isset($products)
       @foreach ($products as $product)
         <div x-bind:style="index == {{ $loop->index }} ? 'transform: translateX(0px)' : (index > {{ $loop->index }} ? 'transform: translateX(-100%)' : 'transform: translateX(100%)')" class="absolute z-0 inset-0 w-screen h-full transition-all ease-in-out duration-1000 transform flex">
-            <div class="flex-1 bg-center bg-cover bg-no-repeat md:block hidden" style="background-image: url('{{ Storage::url($product->picture_one) }}')">
+            <div class="flex-1 bg-center bg-cover bg-no-repeat sm:block hidden" style="background-image: url('{{ Storage::url($product->picture_one) }}')">
             </div>
-            <div class="flex-1 bg-center bg-cover bg-no-repeat md:block hidden" style="background-image: url('{{ Storage::url($product->picture_two) }}')">
+            <div class="flex-1 bg-center bg-cover bg-no-repeat sm:block hidden" style="background-image: url('{{ Storage::url($product->picture_two) }}')">
             </div>
-            <div class="flex-1 bg-center bg-cover bg-no-repeat md:block hidden" style="background-image: url('{{ Storage::url($product->picture_three) }}')">
+            <div class="flex-1 bg-center bg-cover bg-no-repeat sm:block hidden" style="background-image: url('{{ Storage::url($product->picture_three) }}')">
             </div>
 
             <div class="flex-1 bg-center bg-contain bg-no-repeat flex sm:hidden" style="background-image: url('{{ Storage::url($product->picture_four)  }}')">  
