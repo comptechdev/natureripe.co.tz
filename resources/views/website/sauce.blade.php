@@ -1,7 +1,7 @@
 @extends('layouts.website')
 
 @section('content')
-<div class="container-fluid  h-screen" style="background-image: url('{{ asset("img/green.jpg") }}'); background-size: cover;background-repeat: no-repeat;background-position:center">
+<div class="container-fluid  h-screen" style="background-image: url('{{asset("img/green.jpg") }}'); background-size: cover;background-repeat: no-repeat;background-position:center;">
      <div class="grid grid-cols-7">
          <div class="col-span-2">&nbsp;</div>
          <div class="col-span-5 py-48 px-10">
