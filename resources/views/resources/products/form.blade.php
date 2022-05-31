@@ -20,7 +20,13 @@
                         @isset($product)
                             @method("patch")
                         @endisset
+                        @isset($product)
+                            <img src="{{ Storage::url($product->product_image_transparent) }}" alt="" class="h-40" />
+                        @endisset
                         <x-ui.core.input type="file" name="product_image_transparent" label="Product Image Transparent" />
+                        @isset($product)
+                            <img src="{{ Storage::url($product->featured_image) }}" alt="" class="h-40" />
+                        @endisset
                         <x-ui.core.input type="file" name="featured_image" label="Product Image With Background" />
                         <x-ui.core.input name="name" label="Product Name" value="{{ isset($product) ? $product->name : '' }}" />
                         <x-ui.core.input name="color" label="Product Color" value="{{ isset($product) ? $product->color : '' }}" />
@@ -36,7 +42,10 @@
                         <x-ui.core.input name="nutrition_sugers" label="Sugers" value="{{ isset($product) ? $product->nutrition_sugers : '' }}" />
                         <x-ui.core.input name="nutrition_protein" label="Protein" value="{{ isset($product) ? $product->nutrition_protein : '' }}" />
                         <x-ui.core.input name="nutrition_vitamin_c" label="Vitamin C" value="{{ isset($product) ? $product->nutrition_vitamin_c : '' }}" />
-
+                        @isset($product)
+                            <img src="{{ Storage::url($product->background_texture) }}" alt="" class="h-40" />
+                        @endisset
+                        <x-ui.core.input type="file" name="background_texture" label="Background Texture" />
                         <h3>Slider Configurations</h3>
                         @isset($product)
                             <img src="{{ Storage::url($product->picture_one) }}" alt="" class="h-40" />
