@@ -16,13 +16,13 @@
 				<x-website.header.item  href="{{ route('website.our_home') }}" title="CONTACT US"></x-website.header.item>
 
 				
-				<div class="sm:hidden p-2" onclick="toggleMenu()">
+				<div class="md:hidden p-2" onclick="toggleMenu()">
 					<x-svg.menu />
 				</div>
 			<!-- </div> -->
 		</div>
 	</div>
-	<div id="main_menu" class="absolute z-10 bottom-0 bg-white shadow-lg" >
+	<div id="main_menu" class="relative bg-white shadow-lg md:hidden hidden" >
 		<div class="flex flex-col">
 			<x-website.header.item :show="true" href="{{ route('website.about') }}" title="ABOUT US"></x-website.header.item>
 			<x-website.header.item :show="true" href="{{ route('website.history') }}"  title="HISTORY"></x-website.header.item>
