@@ -33,7 +33,7 @@ x-init="$nextTick(() => {
 <div class="z-10 flex w-full justify-center -mt-10">
   @isset($products)
     @foreach ($products as $product)
-      <img x-on:click="index = {{ $loop->index }}" src="{{ Storage::url($product->product_image_transparent) }}" alt="" class="h-14 lg:h-20 z-10 px-2 transition-all ease-in-out duration-1000 transform" x-bind:style="index == {{ $loop->index }} && 'transform: scale(1.5)'" />
+      <img x-on:click="index = {{ $loop->index }}" src="{{ Storage::url($product->product_image_transparent) }}" alt="" class="h-5 lg:h-20 z-10 px-1 lg:px-2 transition-all ease-in-out duration-1000 transform" x-bind:style="index == {{ $loop->index }} && 'transform: scale(1.5)'" />
     @endforeach
   @endisset
 </div>
