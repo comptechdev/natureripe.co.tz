@@ -30,6 +30,8 @@ class Product extends Model
     }
 
     public function meals() {
-        return $this->hasManyThrough(Meal::class, ProductMeal::class);
+        return $this->belongsToMany(Meal::class, ProductMeal::class)->withPivot([
+            "featured_image",
+        ]);
     }
 }
