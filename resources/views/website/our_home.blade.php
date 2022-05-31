@@ -26,9 +26,10 @@
         <img src="{{ asset('img/ab2.jpg') }}" alt="1516404">
         <div class="absolute pt-5 md:pt-10 text-center w-3/4 md:w-2/5 text-white ">
             <h1 class="text-center text-xl md:text-4xl font-black">RIPE MISSION</h1>
-            <p class="text-center text-sm md:text-2xl pt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum sunt in quis libero cum aspernatur
-                ipsam. Sapiente nesciunt, veritatis deserunt architecto nobis incidunt ad blanditiis rerum quas 
-                nam in fugiat!</p> 
+            <p class="text-center text-sm md:text-2xl pt-5">Our core competence is in produce, process and export unique Tanzanian products. 
+                We are committed to be one of the largest fruit producers with full commitment of benefiting our customers with full values of 
+                their money and delivering on time, every time for them at the lowest possible prices with a reasonable margin.
+           s</p> 
         <div class="pt-10 pl-5 pb-5">
             <button class="bg-red-600 text-white hover:bg-white hover:border-2 hover:border-red-600 hover:text-red-600 p-3">VISIT RIPE GARDENS</button>
         </div>

@@ -6,15 +6,16 @@
 
 				<x-website.header.item href="{{ route('website.about') }}" title="ABOUT US"></x-website.header.item>
 				<x-website.header.item  href="{{ route('website.our_home') }}" title="OUR HOME"></x-website.header.item>
+				<x-website.header.item  href="{{ route('website.contacts') }}" title="CONTACT"></x-website.header.item>
 				<div class="">
 					<a  href="{{ route('website.home') }}" class="flex items-center py-4 px-2">
 					    <img src="{{ asset('img/nr.png') }}" alt="fresh" class="h-16">
 					</a>
 				</div>
 				
-				<x-website.header.item href="{{ route('website.hot_sauces') }}" title="RECEPIES"></x-website.header.item>
+				<x-website.header.item href="{{ route('website.recepies') }}" title="RECEPIES"></x-website.header.item>
 				
-				<x-website.header.item href="{{ route('website.recepies') }}" title="SAUCES"></x-website.header.item>
+				<x-website.header.item href="{{ route('website.sauces') }}" title="SAUCES"></x-website.header.item>
 				<x-website.header.item href="{{ route('website.history') }}" title="HISTORY"></x-website.header.item>
 
 
@@ -28,7 +29,7 @@
 	</div>
 	<div id="main_menu" class="relative bg-white shadow-lg md:hidden hidden" >
 		<div class="flex flex-col">
-			<x-website.header.item :show="true" href="{{ route('website.hot_sauces') }}"  title="HOT SOURCES"></x-website.header.item>
+			<x-website.header.item :show="true" href="{{ route('website.sauces') }}"  title="SAUCES"></x-website.header.item>
 			<x-website.header.item :show="true" href="{{ route('website.about') }}" title="ABOUT"></x-website.header.item>
 			<x-website.header.item :show="true" href="{{ route('website.recepies') }}" title="RECEPIES"></x-website.header.item>
 			<x-website.header.item href="{{ route('website.our_home') }}" :show="true" title="OUR HOME"></x-website.header.item>
