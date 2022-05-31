@@ -32,6 +32,9 @@ class WebsitePagesController extends Controller
     public function hotSaucesPage(Request $request){
         return view("website.hot_sauces");
     }
+    public function historyPage(Request $request){
+        return view("website.history");
+    }
     public function saucePage(Request $request, Product $product){
         return view("website.sauce", compact("product"));
     }

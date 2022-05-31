@@ -3,17 +3,19 @@
 		<div class="flex justify-between items-center">
 			<!-- <div flex space-x-7> -->
 				<!-- Well begun is half done. - Aristotle -->
+
+				<x-website.header.item href="{{ route('website.about') }}" title="ABOUT US"></x-website.header.item>
+				<x-website.header.item  href="{{ route('website.our_home') }}" title="OUR HOME"></x-website.header.item>
 				<div class="">
 					<a  href="{{ route('website.home') }}" class="flex items-center py-4 px-2">
 					    <img src="{{ asset('img/nr.png') }}" alt="fresh" class="h-16">
 					</a>
 				</div>
-				<x-website.header.item href="{{ route('website.about') }}" title="ABOUT US"></x-website.header.item>
-				<x-website.header.item  href="{{ route('website.our_home') }}" title="OUR HOME"></x-website.header.item>
 				
-				<x-website.header.item href="{{ route('website.hot_sauces') }}" title="HOT SOURCES"></x-website.header.item>
+				<x-website.header.item href="{{ route('website.hot_sauces') }}" title="RECEPIES"></x-website.header.item>
 				
-				<x-website.header.item href="{{ route('website.recepies') }}" title="RECEPIES"></x-website.header.item>
+				<x-website.header.item href="{{ route('website.recepies') }}" title="SAUCES"></x-website.header.item>
+				<x-website.header.item href="{{ route('website.history') }}" title="HISTORY"></x-website.header.item>
 
 
 					

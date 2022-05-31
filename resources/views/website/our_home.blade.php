@@ -15,9 +15,8 @@
         <img src="{{ asset('img/ab1.jpg') }}" alt="1516404" class="w-full">
         <div class="absolute text-center pt-5 md:pt-10 w-3/4 md:w-2/5 text-white ">
             <h1 class="text-center text-xl md:text-4xl font-black">RIPE VISION</h1>
-            <p class="text-center text-sm md:text-2xl pt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum sunt in quis libero cum aspernatur
-                ipsam. Sapiente nesciunt, veritatis deserunt architecto nobis incidunt ad blanditiis rerum quas 
-                nam in fugiat!</p> 
+            <p class="text-center text-sm md:text-2xl pt-5">We foresee NatureRipe Kilimanjaro Ltd to be recognized leaders in Africa for fresh Tanzanian fruits and savory products with reputation that is claimed
+            by Tanzania business community. We are confident at delivering the best products at the lowest prices.</p> 
         <div class="pt-10 pl-5 pb-5">
             <button class="bg-red-600 text-white hover:bg-white hover:border-2 hover:border-red-600 hover:text-red-600 p-3">VISIT RIPE GARDENS</button>
         </div>
