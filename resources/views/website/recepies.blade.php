@@ -7,4 +7,4 @@
         <x-website.about.recepies href="{{ route('website.sauce', ['product' => $product]) }}" background="{{ Storage::url($product->background_texture) }}" bottle="{{ Storage::url($product->product_image_transparent) }}" title="{{ $product->name }}" titlestyle="text-{{ $product->color }}-600 text-4xl font-extrabold" description="{{ $product->description }}" /> 
     @endforeach
 </div>
-@endsection
+@endsection  

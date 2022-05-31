@@ -1,7 +1,7 @@
 @extends('layouts.website')
 
 @section('content')
-<div class="container-fluid  h-screen bg-auto md:bg-contain" style="background-image: url('{{asset("img/green.jpg") }}'); background-size: cover;background-repeat: no-repeat;background-position:center;">
+<div class="container-fluid  h-screen bg-auto md:bg-contain" style="background-image: url('{{asset("img/htr.png") }}'); background-size: cover;background-repeat: no-repeat;background-position:center;">
      <div class="grid md:grid-cols-7">
          <div class="md:col-span-4">&nbsp;</div>
          <div class="md:col-span-3 py-16 md:py-36 pr-14 md:pr-32">
@@ -15,11 +15,44 @@
          </div>
      </div>
 </div>
+<div class="container-fluid  h-screen bg-auto md:bg-contain"></div>
+
+
+
+
+
+
 <div class="container min-h-min" style="background-image: url('{{asset("img/timeline-section-header-bg-desktop-5x.png") }}'); background-size: cover;background-repeat: no-repeat;background-position:center;">
    <div class="grid md:grid-cols-9">
        <div class="md:col-span-2">&nbsp;</div>
-       <div class="md:col-span-5 text-center font-bold mt-48 mb-48"><h1>NATURERIPE BRAND</h1></div>
+       <div class="md:col-span-5 text-center font-bold mt-48 mb-80"><h1>NATURERIPE BRAND</h1></div>
        <div class="md:col-span-2">&nbsp;</div>
    </div>
-</div
+
+<h1 class="text-4xl font-semibold text-center">Our Values</h1>
+<div class="grid grid-cols-9">
+    <div class="col-span-3 px-6">
+        <img src="{{ asset('img/one.png') }}" alt="one" class="py-10">
+            <h1 class="text-2xl font-semibold">Find location for store</h1>
+            <p class="py-5">Praesent sit amet metus id sapien ullamcorper cursus posuere quis ex. 
+                    In faucibus nec metus sit amet mollis. Aliquam vehicula tellus ut 
+                    scelerisque scelerisque. Fusce aliquet blandit lorem, eget scelerisque sapien.</p>
+    </div>
+    <div class="col-span-3 px-6">
+        <img src="{{ asset('img/two.png') }}" alt="one" class="py-10">
+            <h1 class="text-3xl font-semibold">Excellence in quality products</h1>
+            <p class="py-5">a certain level of success in meeting customer needs, 
+                creating products and services that meet specifications and expectations, 
+                and comply with applicable standards.</p>
+    </div>
+    <div class="col-span-3 px-6">
+        <img src="{{ asset('img/three.png') }}" alt="one" class="py-10">
+            <h1 class="text-2xl font-semibold">Integrity and reliability</h1>
+            <p class="py-5">We are honest, trustworthy, respectful, and ethical in our actions with 
+                each other and the customers we serve. We always strive to do the right .</p>
+    </div>
+  
+
+</div>
+
 @endsection

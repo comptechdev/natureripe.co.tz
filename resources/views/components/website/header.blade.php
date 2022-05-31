@@ -2,7 +2,6 @@
 	<div class=" max-w-6xl mx-auto px-4">
 		<div class="flex justify-between items-center">
 			<!-- <div flex space-x-7> -->
-				<!-- Well begun is half done. - Aristotle -->
 				<div class="">
 					<a  href="{{ route('website.home') }}" class="flex items-center py-4 px-2">
 					    <img src="{{ asset('img/nr.png') }}" alt="fresh" class="h-16">
@@ -12,7 +11,7 @@
 				<x-website.header.item href="{{ route('website.about') }}" title="ABOUT US"></x-website.header.item>
 				<x-website.header.item href="{{ route('website.history') }}" title="HISTORY"></x-website.header.item>
 				<x-website.header.item href="{{ route('website.recepies') }}" title="PRODUCTS"></x-website.header.item>
-				<x-website.header.item href="{{ route('website.hot_sauces') }}" title="MEALS"></x-website.header.item>
+				<x-website.header.item href="{{ route('website.meals') }}" title="MEALS"></x-website.header.item>
 				<x-website.header.item  href="{{ route('website.our_home') }}" title="CONTACT US"></x-website.header.item>
 
 				
@@ -27,7 +26,7 @@
 			<x-website.header.item :show="true" href="{{ route('website.about') }}" title="ABOUT US"></x-website.header.item>
 			<x-website.header.item :show="true" href="{{ route('website.history') }}"  title="HISTORY"></x-website.header.item>
 			<x-website.header.item :show="true" href="{{ route('website.recepies') }}" title="PRODUCTS"></x-website.header.item>
-			<x-website.header.item :show="true" href="{{ route('website.hot_sauces') }}"  title="MEALS"></x-website.header.item>
+			<x-website.header.item :show="true" href="{{ route('website.meals') }}"  title="MEALS"></x-website.header.item>
 			<x-website.header.item href="{{ route('website.our_home') }}" :show="true" title="CONTACT US"></x-website.header.item>
 		</div>
 	</div>

@@ -30,12 +30,17 @@ class WebsitePagesController extends Controller
         $products = Product::all();
         return view("website.recepies", compact("products"));
     }
-    public function hotSaucesPage(Request $request){
-        return view("website.hot_sauces");
+    public function mealsPage(){
+        $meals = Meal::all();
+        return view("website.meals", compact("meals"));
+    }
+    public function SaucesPage(Request $request){
+        return view("website.sauces");
     }
     public function historyPage(Request $request){
         return view("website.history");
     }
+    
     public function saucePage(Request $request, Product $product){
         return view("website.sauce", compact("product"));
     }
