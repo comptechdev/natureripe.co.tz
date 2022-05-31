@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Collection;
 use App\Models\Meal;
 use App\Models\Product;
 use Illuminate\Http\Request;
@@ -31,8 +32,8 @@ class WebsitePagesController extends Controller
         return view("website.recepies", compact("products"));
     }
     public function mealsPage(){
-        $meals = Meal::all();
-        return view("website.meals", compact("meals"));
+        $collections = Collection::all();
+        return view("website.meals", compact("collections"));
     }
     public function SaucesPage(Request $request){
         return view("website.sauces");

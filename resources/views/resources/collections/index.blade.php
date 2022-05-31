@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Products') }}
+            {{ __('Collections') }}
         </h2>
     </x-slot>
 
@@ -9,7 +9,7 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 bg-white border-b border-gray-200">
-                    <x-ui.buttons.elevated title="Add Product" href="{{ route('resources.products.create') }}"/>
+                    <x-ui.buttons.elevated title="Add Collection" href="{{ route('resources.collections.create') }}"/>
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}
@@ -20,22 +20,22 @@
                         <thead>
                             <tr>
                                 <th>S/n</th>
-                                <th>Product</th>
+                                <th>Collection</th>
                                 <th></th>
                             </tr>
                         </thead>
 
                         <tbody>
-                            @foreach ($products as $product)
+                            @foreach ($collections as $collection)
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
-                                    <td>{{ $product->name }}</td>
+                                    <td>{{ $collection->name }}</td>
                                     <td>
-                                        <form action="{{ route('resources.products.destroy', ['product' => $product]) }}" method="post">
+                                        <form action="{{ route('resources.collections.destroy', ['collection' => $collection]) }}" method="post">
                                             @csrf
                                             @method("delete")
-                                            <a href="{{ route('resources.products.show', ['product' => $product]) }}" class="btn-sm">view</a>
-                                            <a href="{{ route('resources.products.edit', ['product' => $product]) }}" class="btn-sm">edit</a>
+                                            <a href="{{ route('resources.collections.show', ['collection' => $collection]) }}" class="btn-sm">view</a>
+                                            <a href="{{ route('resources.collections.edit', ['collection' => $collection]) }}" class="btn-sm">edit</a>
                                             <button type="submit" class="btn-sm">Delete</button>
                                         </form>
                                     </td>

@@ -5,13 +5,21 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Support\Str;
 
-class Collections extends Model
+class Collection extends Model
 {
     use HasFactory;
     use SoftDeletes;
 
-    protected $fillable = ["name", "description", "featured_image", "collection_id"];
+    protected $guarded = ["id"];
+
+    public static function boot() {
+        parent::boot();
+        static::creating(function ($model) {
+            $model->collection_id = (string) Str::uuid();
+        });
+    }
 
     public function meals() {
         return $this->belongsToMany(Meal::class);

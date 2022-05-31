@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\CollectionController;
+use App\Http\Controllers\CollectionMealController;
 use App\Http\Controllers\CommandsController;
 use App\Http\Controllers\MealController;
 use App\Http\Controllers\MealIngredientController;
@@ -54,4 +56,6 @@ Route::middleware(['auth'])->prefix("resources")->name("resources.")->group(func
     Route::resource("meals", MealController::class);
     Route::resource("meals.ingridients", MealIngredientController::class);
     Route::resource("meals.products", ProductMealController::class);
+    Route::resource("collections", CollectionController::class);
+    Route::resource("collections.meals", CollectionMealController::class);
 });
