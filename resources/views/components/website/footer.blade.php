@@ -1,7 +1,7 @@
 <div class="bg-slate-100">
     <!-- Let all your things have their places; let each part of your business have its time. - Benjamin Franklin -->
-    <div class="grid justify-center md:h-36 h-12">
-        <img src="{{ asset('img/nr.png') }}" alt="">
+    <div class="md:h-24 h-12">
+        <img src="{{ asset('img/nr.png') }}" alt="" class="object-contain h-full w-full">
     </div>
 
     <div class="flex md:flex-row md:justify-center flex-col items-center align-baseline py-3 font-semibold sm:gap-3 shadow-2xl">

@@ -37,9 +37,21 @@
                         <x-ui.core.input name="nutrition_vitamin_c" label="Vitamin C" value="{{ isset($product) ? $product->nutrition_vitamin_c : '' }}" />
 
                         <h3>Slider Configurations</h3>
+                        @isset($product)
+                            <img src="{{ Storage::url($product->picture_one) }}" alt="" class="h-40" />
+                        @endisset
                         <x-ui.core.input type="file" name="picture_one" label="Picture 1" />
+                        @isset($product)
+                            <img src="{{ Storage::url($product->picture_two) }}" alt="" class="h-40" />
+                        @endisset
                         <x-ui.core.input type="file" name="picture_two" label="Picture 2" />
+                        @isset($product)
+                            <img src="{{ Storage::url($product->picture_three) }}" alt="" class="h-40" />
+                        @endisset
                         <x-ui.core.input type="file" name="picture_three" label="Picture 3" />
+                        @isset($product)
+                            <img src="{{ Storage::url($product->picture_four) }}" alt="" class="h-40" />
+                        @endisset
                         <x-ui.core.input type="file" name="picture_four" label="Picture 4" />
                         {{-- <x-ui.core.text-area name="poster_message" label="Poster Message" value="{!! isset($product) ? $product->poster_message : '' !!}" /> --}}
 

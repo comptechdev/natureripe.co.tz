@@ -88,22 +88,22 @@
                         </div>
                     </div>
 
-                    <h3 class="mt-10">Slider Preview</h3>
+                    <h3 class="mt-10">Slider Preview - Web </h3>
                     <div class="flex w-full">
-                        <div class="h-96 flex-1 bg-center bg-cover bg-no-repeat flex items-center justify-center" style="background-image: url('{{ Storage::url($product->background_color)  }}')">
-                            <img src="{{ Storage::url($product->picture_one) }}" alt="" class="h-full" />
+                        <div class="flex-1 bg-center bg-cover bg-no-repeat flex items-center justify-center">
+                            <img src="{{ Storage::url($product->picture_one) }}" alt="" class="h-full w-full object-cover" />
                         </div>
-                        <div class="h-96 flex-1 bg-center bg-cover bg-no-repeat flex items-center justify-center" style="background-image: url('{{ Storage::url($product->background_color)  }}')">
-                            <img src="{{ Storage::url($product->picture_two) }}" alt="" class="h-full" />
+                        <div class="flex-1 bg-center bg-cover bg-no-repeat flex items-center justify-center">
+                            <img src="{{ Storage::url($product->picture_two) }}" alt="" class="h-full w-full object-cover" />
                         </div>
-                        <div class="h-96 flex-1 bg-center bg-cover bg-no-repeat flex items-center justify-center" style="background-image: url('{{ Storage::url($product->background_color)  }}')">
-                            <img src="{{ Storage::url($product->picture_three) }}" alt="" class="h-full" />
+                        <div class="flex-1 bg-center bg-cover bg-no-repeat flex items-center justify-center">
+                            <img src="{{ Storage::url($product->picture_three) }}" alt="" class="h-full w-full object-cover" />
                         </div>
                     </div>
 
                     <h3 class="mt-10">Slider Preview - Mobile</h3>
-                    <div class="h-96 flex-1 bg-center bg-cover bg-no-repeat flex items-center justify-center" style="background-image: url('{{ Storage::url($product->background_color)  }}')">
-                        <img src="{{ Storage::url($product->picture_four) }}" alt="" class="h-full" />
+                    <div class="inline-block bg-center bg-cover bg-no-repeat" style="background-image: url('{{ Storage::url($product->background_color)  }}')">
+                        <img src="{{ Storage::url($product->picture_four) }}" alt="" class="object-cover h-80" />
                     </div>
                 </div>
             </div>

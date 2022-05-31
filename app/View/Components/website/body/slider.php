@@ -17,7 +17,7 @@ class slider extends Component
     public function __construct()
     {
         //
-        $this->products = Product::all();
+        $this->products = Product::whereNotNull("picture_one")->whereNotNull("picture_two")->whereNotNull("picture_three")->whereNotNull("picture_four")->get();
     }
 
     /**

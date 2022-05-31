@@ -49,61 +49,52 @@ class ProductController extends Controller
         $product = Product::create(array_merge($request->input()));
 
         if ($request->hasFile("featured_image")) {
-            $fileName = time().'.'.$request->file("featured_image")->extension();  
-            $path = $request->file("featured_image")->storeAs("products/featured", $fileName, "public");
-            $product->featured_image = $path;
+            $fileName = $this->unique_code(9).'.'.$request->file("featured_image")->extension();  
+            $product->featured_image = $request->file("featured_image")->storeAs("products/featured", $fileName, "public");
         }
 
         if ($request->hasFile("product_image_transparent")) {
-            $fileName = time().'.'.$request->file("product_image_transparent")->extension();  
-            $path = $request->file("product_image_transparent")->storeAs("products/transparent", $fileName, "public");
-            $product->product_image_transparent = $path;
+            $fileName = $this->unique_code(9).'.'.$request->file("product_image_transparent")->extension();  
+            $product->product_image_transparent = $request->file("product_image_transparent")->storeAs("products/transparent", $fileName, "public");;
         }
 
         if ($request->hasFile("background_texture")) {
-            $fileName = time().'.'.$request->file("background_texture")->extension();  
-            $path = $request->file("background_texture")->storeAs("products/texture", $fileName, "public");
-            $product->background_texture = $path;
+            $fileName = $this->unique_code(9).'.'.$request->file("background_texture")->extension();  
+            $product->background_texture =$request->file("background_texture")->storeAs("products/texture", $fileName, "public");;
         }
 
         if ($request->hasFile("background_color")) {
-            $fileName = time().'.'.$request->file("background_color")->extension();  
-            $path = $request->file("background_color")->storeAs("products/background", $fileName, "public");
-            $product->background_color = $path;
+            $fileName = $this->unique_code(9).'.'.$request->file("background_color")->extension();  
+            $product->background_color = $request->file("background_color")->storeAs("products/background", $fileName, "public");
         }
 
         if ($request->hasFile("featured_meal_picture")) {
-            $fileName = time().'.'.$request->file("featured_meal_picture")->extension();  
-            $path = $request->file("featured_meal_picture")->storeAs("products/meal", $fileName, "public");
-            $product->featured_meal_picture = $path;
+            $fileName = $this->unique_code(9).'.'.$request->file("featured_meal_picture")->extension();  
+            $product->featured_meal_picture = $request->file("featured_meal_picture")->storeAs("products/meal", $fileName, "public");
         }
 
         if ($request->hasFile("picture_one")) {
-            $fileName = time().'.'.$request->file("picture_one")->extension();  
+            $fileName = $this->unique_code(9).'.'.$request->file("picture_one")->extension();  
             $product_name = $product->name;
-            $path = $request->file("picture_one")->storeAs("products/$product_name/slides", $fileName, "public");
-            $product->picture_one = $path;
+            $product->picture_one = $request->file("picture_one")->storeAs("products/$product_name/slides", $fileName, "public");
         }
 
         if ($request->hasFile("picture_two")) {
-            $fileName = time().'.'.$request->file("picture_two")->extension();  
+            $fileName = $this->unique_code(9).'.'.$request->file("picture_two")->extension();  
             $product_name = $product->name;
-            $path = $request->file("picture_two")->storeAs("products/$product_name/slides", $fileName, "public");
-            $product->picture_two = $path;
+            $product->picture_two = $request->file("picture_two")->storeAs("products/$product_name/slides", $fileName, "public");;
         }
 
         if ($request->hasFile("picture_three")) {
-            $fileName = time().'.'.$request->file("picture_three")->extension();  
+            $fileName = $this->unique_code(9).'.'.$request->file("picture_three")->extension();  
             $product_name = $product->name;
-            $path = $request->file("picture_three")->storeAs("products/$product_name/slides", $fileName, "public");
-            $product->picture_three = $path;
+            $product->picture_three = $request->file("picture_three")->storeAs("products/$product_name/slides", $fileName, "public");
         }
 
         if ($request->hasFile("picture_four")) {
-            $fileName = time().'.'.$request->file("picture_four")->extension();  
+            $fileName = $this->unique_code(9).'.'.$request->file("picture_four")->extension();  
             $product_name = $product->name;
-            $path = $request->file("picture_four")->storeAs("products/$product_name/slides", $fileName, "public");
-            $product->picture_four = $path;
+            $product->picture_four = $request->file("picture_four")->storeAs("products/$product_name/slides", $fileName, "public");;
         }
         $product->save();
         DB::commit();
@@ -155,61 +146,50 @@ class ProductController extends Controller
         $product->update($request->input());
 
         if ($request->hasFile("featured_image")) {
-            $fileName = time().'.'.$request->file("featured_image")->extension();  
-            $path = $request->file("featured_image")->storeAs("products/featured", $fileName, "public");
-            $product->featured_image = $path;
+            $fileName1 = $this->unique_code(9).'.'.$request->file("featured_image")->extension();  
+            $product->featured_image = $request->file("featured_image")->storeAs("products/featured", $fileName1, "public");
         }
 
         if ($request->hasFile("product_image_transparent")) {
-            $fileName = time().'.'.$request->file("product_image_transparent")->extension();  
-            $path = $request->file("product_image_transparent")->storeAs("products/featured", $fileName, "public");
-            $product->product_image_transparent = $path;
+            $fileName2 = $this->unique_code(9).'.'.$request->file("product_image_transparent")->extension();  
+            $product->product_image_transparent = $request->file("product_image_transparent")->storeAs("products/featured", $fileName2, "public");
         }
 
         if ($request->hasFile("background_texture")) {
-            $fileName = time().'.'.$request->file("background_texture")->extension();  
-            $path = $request->file("background_texture")->storeAs("products/featured", $fileName, "public");
-            $product->background_texture = $path;
+            $fileName3 = $this->unique_code(9).'.'.$request->file("background_texture")->extension();  
+            $product->background_texture = $request->file("background_texture")->storeAs("products/featured", $fileName3, "public");
         }
 
         if ($request->hasFile("background_color")) {
-            $fileName = time().'.'.$request->file("background_color")->extension();  
-            $path = $request->file("background_color")->storeAs("products/featured", $fileName, "public");
-            $product->background_color = $path;
+            $fileName4 = $this->unique_code(9).'.'.$request->file("background_color")->extension();  
+            $product->background_color = $request->file("background_color")->storeAs("products/featured", $fileName4, "public");
         }
 
         if ($request->hasFile("featured_meal_picture")) {
-            $fileName = time().'.'.$request->file("featured_meal_picture")->extension();  
-            $path = $request->file("featured_meal_picture")->storeAs("products/featured", $fileName, "public");
-            $product->featured_meal_picture = $path;
+            $fileName5 = $this->unique_code(9).'.'.$request->file("featured_meal_picture")->extension();  
+            $product->featured_meal_picture = $request->file("featured_meal_picture")->storeAs("products/featured", $fileName5, "public");
         }
 
+        $product_name = $product->name;
+
         if ($request->hasFile("picture_one")) {
-            $fileName = time().'.'.$request->file("picture_one")->extension();  
-            $product_name = $product->name;
-            $path = $request->file("picture_one")->storeAs("products/$product_name/slides", $fileName, "public");
-            $product->picture_one = $path;
+            $fileName6 = $this->unique_code(9).'.'.$request->file("picture_one")->extension();  
+            $product->picture_one = $request->file("picture_one")->storeAs("products/$product_name/slides", $fileName6, "public");
         }
 
         if ($request->hasFile("picture_two")) {
-            $fileName = time().'.'.$request->file("picture_two")->extension();  
-            $product_name = $product->name;
-            $path = $request->file("picture_two")->storeAs("products/$product_name/slides", $fileName, "public");
-            $product->picture_two = $path;
+            $fileName7 = $this->unique_code(9).'.'.$request->file("picture_two")->extension();  
+            $product->picture_two = $request->file("picture_two")->storeAs("products/$product_name/slides", $fileName7, "public");
         }
 
         if ($request->hasFile("picture_three")) {
-            $fileName = time().'.'.$request->file("picture_three")->extension();  
-            $product_name = $product->name;
-            $path = $request->file("picture_three")->storeAs("products/$product_name/slides", $fileName, "public");
-            $product->picture_three = $path;
+            $fileName8 = $this->unique_code(9).'.'.$request->file("picture_three")->extension();  
+            $product->picture_three =$request->file("picture_three")->storeAs("products/$product_name/slides", $fileName8, "public");
         }
 
         if ($request->hasFile("picture_four")) {
-            $fileName = time().'.'.$request->file("picture_four")->extension();  
-            $product_name = $product->name;
-            $path = $request->file("picture_four")->storeAs("products/$product_name/slides", $fileName, "public");
-            $product->picture_four = $path;
+            $fileName9 = $this->unique_code(9).'.'.$request->file("picture_four")->extension();  
+            $product->picture_four = $request->file("picture_four")->storeAs("products/$product_name/slides", $fileName9, "public");
         }
         
         $product->save();
@@ -231,5 +211,10 @@ class ProductController extends Controller
         //
         $product->delete();
         return redirect(route("resources.products.index"));
+    }
+
+    private function unique_code($limit)
+    {
+        return substr(base_convert(sha1(uniqid(mt_rand())), 16, 36), 0, $limit);
     }
 }
