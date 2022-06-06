@@ -41,15 +41,14 @@
     <div class="col-span-3 px-6">
         <img src="{{ asset('img/two.png') }}" alt="one" class="py-10">
             <h1 class="text-3xl font-semibold">Excellence in quality products</h1>
-            <p class="py-5">a certain level of success in meeting customer needs, 
-                creating products and services that meet specifications and expectations, 
-                and comply with applicable standards.</p>
+            <p class="py-5">in food and beverage industry, product quality is one dimension that 
+                could able to judge by the consumers after the dining based on the taste of the food,.</p>
     </div>
     <div class="col-span-3 px-6">
         <img src="{{ asset('img/three.png') }}" alt="one" class="py-10">
             <h1 class="text-2xl font-semibold">Integrity and reliability</h1>
-            <p class="py-5">We are honest, trustworthy, respectful, and ethical in our actions with 
-                each other and the customers we serve. We always strive to do the right .</p>
+            <p class="py-5">We establish open and honest relationships. We pursue relationships based on 
+                transparency, persistence, mutual trust and integrity with our employees,</p>
     </div>
   
 
