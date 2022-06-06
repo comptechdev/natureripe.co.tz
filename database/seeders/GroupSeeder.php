@@ -16,19 +16,9 @@ class GroupSeeder extends Seeder
     public function run()
     {
         //
-        Group::create(
-            [
-                "name" => "Hot Sauces",
-            ],
-            [
-                "name" => "Sweet Sauces",
-            ],
-            [
-                "name" => "Jams",
-            ],
-            [
-                "name" => "Snacks",
-            ],
-        );
+        Group::create(["name" => "Hot Sauces"]);
+        Group::create(["name" => "Sweet Sauces"]);
+        Group::create(["name" => "Jams"]);
+        Group::create(["name" => "Snacks"]);
     }
 }

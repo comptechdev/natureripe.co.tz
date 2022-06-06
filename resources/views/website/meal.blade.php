@@ -31,5 +31,23 @@
                     </ol> --}}
       </div>
   </div>
+
+  <div class="max-w-5xl mx-auto">
+    <div class="container mx-auto py-16">
+        <h1 class="text-5xl font-extrabold pt-16 pb-10">Similar Products</h1>
+        <p class="text-2xl pb-10">It Goes better with this meals.</p>
+    </div>
+
+    <div class="flex flex-nowrap gap-5 overflow-x-scroll" x-data>
+        @foreach ($meal->products as $product)
+            <div class="shrink-0 w-60 inline-block rounded overflow-hidden border-2 origin-bottom-left transform hover:-rotate-3 hover:shadow-lg" x-on:click="window.location = '{{ route("website.sauce", ["product" => $product]) }}'">
+                <img class="w-full" src="{{ Storage::url($product->featured_image) }}" alt="eggs">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">{{ $product->name }}</div>
+                    {{-- {!! $meal->description !!} --}}
+                </div>
+            </div>
+        @endforeach
+    </div>
 </div>
 @endsection
