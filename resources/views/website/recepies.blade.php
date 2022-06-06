@@ -10,7 +10,7 @@
 
 @foreach ($groups as $group)
     <div class="max-w-5xl mx-auto">
-        <div class="container mx-auto py-16">
+        <div class="container mx-auto py-5">
             <h1 class="text-5xl font-extrabold pt-16 pb-10">{{ $group->name }}</h1>
             <p class="text-2xl pb-10">{{ $group->description }}</p>
         </div>
