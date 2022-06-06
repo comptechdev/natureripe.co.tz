@@ -12,8 +12,8 @@
 				<x-website.header.item href="{{ route('website.history') }}" title="HISTORY"></x-website.header.item>
 				<x-website.header.item href="{{ route('website.recepies') }}" title="HOT SAUCES"></x-website.header.item>
 				<x-website.header.item href="{{ route('website.meals') }}" title="RECEPIES"></x-website.header.item>
-				<x-website.header.item  href="{{ route('website.our_home') }}" title="CONTACT US"></x-website.header.item>
-
+				<x-website.header.item  href="{{ route('website.our_home') }}" title="OUR HOME"></x-website.header.item>
+				<x-website.header.item  href="{{ route('website.contacts') }}" title="CONTACTS"></x-website.header.item>
 				
 				<div class="md:hidden p-2" onclick="toggleMenu()">
 					<x-svg.menu />
@@ -27,7 +27,9 @@
 			<x-website.header.item :show="true" href="{{ route('website.history') }}"  title="HISTORY"></x-website.header.item>
 			<x-website.header.item :show="true" href="{{ route('website.recepies') }}" title="HOT SAUCES"></x-website.header.item>
 			<x-website.header.item :show="true" href="{{ route('website.meals') }}"  title="RECEPIES"></x-website.header.item>
-			<x-website.header.item href="{{ route('website.our_home') }}" :show="true" title="CONTACT US"></x-website.header.item>
+			<x-website.header.item href="{{ route('website.our_home') }}" :show="true" title="OUR HOME"></x-website.header.item>
+			<x-website.header.item  href="{{ route('website.contacts') }}" title="CONTACTS"></x-website.header.item>
+
 		</div>
 	</div>
 	<script>
