@@ -29,6 +29,7 @@
                         @endisset
                         <x-ui.core.input type="file" name="featured_image" label="Product Image With Background" />
                         <x-ui.core.input name="name" label="Product Name" value="{{ isset($product) ? $product->name : '' }}" />
+                        <x-ui.core.select name="group_id" label="Product Group" :options="$groups" value="{{ isset($product) ? $product->group_id : '' }}" />
                         <x-ui.core.input name="color" label="Product Color" value="{{ isset($product) ? $product->color : '' }}" />
                         <x-ui.core.input name="description" label="Description" value="{{ isset($product) ? $product->description : '' }}" />
                         <x-ui.core.input name="nutrition_unit" label="Nutrition Unit of Meansurement" value="{{ isset($product) ? $product->nutrition_unit : '' }}" />

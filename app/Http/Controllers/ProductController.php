@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Group;
 use App\Models\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -28,7 +29,8 @@ class ProductController extends Controller
     public function create()
     {
         //
-        return view("resources.products.form");
+        $groups = Group::all();
+        return view("resources.products.form", compact("groups"));
     }
 
     /**
@@ -125,7 +127,8 @@ class ProductController extends Controller
     public function edit(Product $product)
     {
         //
-        return view("resources.products.form", compact('product'));
+        $groups = Group::all();
+        return view("resources.products.form", compact('product', 'groups'));
     }
 
     /**

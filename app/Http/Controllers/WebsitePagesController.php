@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Collection;
+use App\Models\Group;
 use App\Models\Meal;
 use App\Models\Product;
 use Illuminate\Http\Request;
@@ -13,7 +14,8 @@ class WebsitePagesController extends Controller
     public function homePage() {
         $products = Product::all();
         $meals = Meal::all();
-        return view("website.home", compact("meals", "products"));
+        $collections = Collection::all();
+        return view("website.home", compact("meals", "products", "collections"));
     }
 
     public function aboutPage() {
@@ -28,8 +30,10 @@ class WebsitePagesController extends Controller
         return view("website.our_home");
     }
     public function recepiesPage(){
-        $products = Product::all();
-        return view("website.recepies", compact("products"));
+        $sauces = Product::where("group_id", 1)->get();
+        // $groups = [];
+        $groups = Group::where("id", "!=", 1)->get();
+        return view("website.recepies", compact("sauces","groups"));
     }
     public function mealsPage(){
         $collections = Collection::all();
