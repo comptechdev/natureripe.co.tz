@@ -30,9 +30,9 @@ class WebsitePagesController extends Controller
         return view("website.our_home");
     }
     public function recepiesPage(){
-        $sauces = Product::where("group_id", 1)->get();
+        $sauces = Product::where("group_id", 5)->get();
         // $groups = [];
-        $groups = Group::where("id", "!=", 1)->get();
+        $groups = Group::where("id", "!=", 5)->get();
         return view("website.recepies", compact("sauces","groups"));
     }
     public function mealsPage(){
