@@ -20,6 +20,46 @@
       </div>
   </div>
 </div>   -->
+<div class="container-fluid  h-screen bg-auto md:bg-contain" style="background-image: url('{{asset("img/htr.png") }}'); background-size: cover;background-repeat: no-repeat;background-position:center;">
+     <div class="grid md:grid-cols-7">
+         <div class="md:col-span-4">&nbsp;</div>
+         <div class="md:col-span-3 py-16 md:py-36 pr-14 md:pr-32">
+             <h1 class="py-3 font-extrabold">THE HISTORY OF NATURERIPE® BRAND</h1>
+             <p>NATURERIPE® Brand products are made by NatureRipe Company, 
+                 founded by NatureRipe in Year .
+                  It was here that they developed the recipe for NATURERIPE® Original 
+                  Red Pepper Sauce that's been passed down from generation to generation.
+                   To this day, the company is still family-owned and -operated 
+                   on that very same island.</p>
+         </div>
+     </div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2">
+    <div class="flex justify-center">
+        <img src="{{ asset('img/a1.png') }}" alt="1516404" class="w-full">
+        <div class="absolute text-center pt-5 md:pt-10 w-3/4 md:w-2/5 text-white ">
+            <h1 class="text-center text-xl md:text-4xl font-black">RIPE VISION</h1>
+            <p class="text-center text-sm md:text-2xl pt-5">We foresee NatureRipe Kilimanjaro Ltd to be recognized leaders in Africa for fresh Tanzanian fruits and savory products with reputation that is claimed
+            by Tanzania business community. We are confident at delivering the best products at the lowest prices.</p> 
+        <div class="pt-10 pl-5 pb-5">
+            <button class="bg-red-600 text-white hover:bg-white hover:border-2 hover:border-red-600 hover:text-red-600 p-3">VISIT RIPE GARDENS</button>
+        </div>
+        </div>
+    </div>
+    <div class="flex justify-center">
+        <img src="{{ asset('img/msv.png') }}" alt="1516404">
+        <div class="absolute pt-5 md:pt-10 text-center w-3/4 md:w-2/5 text-white ">
+            <h1 class="text-center text-xl md:text-4xl font-black">RIPE MISSION</h1>
+            <p class="text-center text-sm md:text-2xl pt-5">Our core competence is in produce, process and export unique Tanzanian products. 
+                We are committed to be one of the largest fruit producers with full commitment of benefiting our customers with full values of 
+                their money.
+           s</p> 
+        <div class="pt-10 pl-5 pb-5">
+            <button class="bg-red-600 text-white hover:bg-white hover:border-2 hover:border-red-600 hover:text-red-600 p-3">VISIT RIPE GARDENS</button>
+        </div>
+        </div>
+    </div>
+</div>
 <section class="pt-20 px-16 lg:pt-[120px] pb-12 lg:pb-[90px] overflow-hidden">
    <div class="container">
       <div class="flex flex-wrap justify-between items-center -mx-4">
@@ -28,14 +68,14 @@
                <div class="w-full xl:w-1/2 px-3 sm:px-4">
                   <div class="py-3 sm:py-4">
                      <img
-                        src="https://cdn.tailgrids.com/1.0/assets/images/services/image-1.jpg"
+                        src="{{ asset('img/embe.jpeg') }}"
                         alt=""
                         class="rounded-2xl w-full"
                         />
                   </div>
                   <div class="py-3 sm:py-4">
                      <img
-                        src="https://cdn.tailgrids.com/1.0/assets/images/services/image-2.jpg"
+                        src="{{ asset('img/kiwanda.jpeg') }}"
                         alt=""
                         class="rounded-2xl w-full"
                         />
@@ -44,7 +84,7 @@
                <div class="w-full xl:w-1/2 px-3 sm:px-4">
                   <div class="my-4 relative z-10">
                      <img
-                        src="https://cdn.tailgrids.com/1.0/assets/images/services/image-3.jpg"
+                        src="{{ asset('img/kwnd.jpeg') }}"
                         alt=""
                         class="rounded-2xl w-full"
                         />
@@ -712,27 +752,27 @@
 <div class="container mx-auto py-20 px-8">
            <h1 class="text-4xl font-extrabold text-center pb-10 border-b-2">Our Values</h1>
 
-    <div class="grid md:grid-cols-3">
+    <div class="grid md:grid-cols-3 space-x-4 md:space-x-6">
         <div>
            <img src="{{ asset('img/one.png') }}" alt="one" class="py-10">
-           <h3 class="text-3xl font-semibold">Find location for store</h3>
-           <p class="py-5">Praesent sit amet metus id sapien ullamcorper cursus posuere quis ex. 
-                In faucibus nec metus sit amet mollis. Aliquam vehicula tellus ut 
-                scelerisque scelerisque. Fusce aliquet blandit lorem, eget scelerisque sapien.</p>
+           <h3 class="text-3xl font-semibold">Excellence in quality products</h3>
+           <p class="py-5">In food and beverage industry, product quality is 
+              one dimension that could able to judge by the consumers after
+               the dining based on the taste of the food,.</p>
         </div>
         <div>
            <img src="{{ asset('img/two.png') }}" alt="one" class="py-10">
-           <h3 class="text-3xl font-semibold">Make an appointment</h3>
-           <p class="py-5">Praesent sit amet metus id sapien ullamcorper cursus posuere quis ex. 
-                In faucibus nec metus sit amet mollis. Aliquam vehicula tellus ut 
-                scelerisque scelerisque. Fusce aliquet blandit lorem, eget scelerisque sapien.</p>
+           <h3 class="text-3xl font-semibold">Integrity and reliability</h3>
+           <p class="py-5">We establish open and honest relationships. 
+              We pursue relationships based on transparency, persistence, 
+              mutual trust and integrity with our employees,</p>
         </div>
         <div>
-           <img src="{{ asset('img/three.png') }}" alt="one" class="py-10">
-           <h3 class="text-3xl font-semibold">Become our partner</h3>
-           <p class="py-5">Praesent sit amet metus id sapien ullamcorper cursus posuere quis ex. 
-                In faucibus nec metus sit amet mollis. Aliquam vehicula tellus ut 
-                scelerisque scelerisque. Fusce aliquet blandit lorem, eget scelerisque sapien.</p>
+           <img src="{{ asset('img/two.png') }}" alt="one" class="py-10">
+           <h3 class="text-3xl font-semibold">Integrity and reliability</h3>
+           <p class="py-5">We establish open and honest relationships. 
+              We pursue relationships based on transparency, persistence, 
+              mutual trust and integrity with our employees,</p>
         </div>
     </div>
 
