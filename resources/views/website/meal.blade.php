@@ -16,8 +16,11 @@
           <h1 class="text-start text-3xl font-black pb-5">INGREDIENTS</h1>
           @foreach ($meal->ingridients as $ingridient)
               @isset($ingridient->ingridientable->product)
-                <p class="pr-10 md:text-2xl">{{ $ingridient->ingridientable->product->name }}p>
+                <p class="pr-10 md:text-2xl">{{ $ingridient->ingridientable->product->name }}<p>
+                @else 
+                <p class="pr-10 md:text-2xl">{{ $ingridient->name }}<p>
               @endisset
+
           @endforeach
           
       </div>
