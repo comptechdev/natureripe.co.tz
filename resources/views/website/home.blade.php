@@ -56,6 +56,21 @@
         </div>
     </div>
 </div>
+
+<div class="container mx-auto px-5">
+    <div class="grid md:grid-cols-7">
+        <div class="col-span-4 text-center" style="background-image: url('{{asset("img/mult.jpeg") }}');">
+               
+        </div>
+        <div class="text-center py-40 px-8 col-span-3">
+                <h3 class="py-5 text-red-600 font-bold">LIGHT THINGS UP</h3>
+                <h2 class="text-2xl font-semibold">
+                Nature Ripe Kilimanjaro BBQ Sauces onto all of your grilling favorites 
+                this summer. Find your favorite BBQ sauces, hot sauces and more in our online store.
+                </h2>
+        </div>
+    </div>
+</div>
 <x-website.body.section />
 
 
