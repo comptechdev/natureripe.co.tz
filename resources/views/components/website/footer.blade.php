@@ -6,9 +6,6 @@
 
     <div class="flex md:flex-row md:justify-center flex-col items-center align-baseline py-14 md:py-3 font-semibold sm:gap-3 shadow-2xl">
         <div class="hover:border-b-2 border-b-red-600 p-2">
-              <a href="{{ route('website.our_home') }}">OUR HOME</a>
-        </div>
-        <div class="hover:border-b-2 border-b-red-600 p-2">
               <a href="{{ route('website.about') }}">ABOUT</a>
         </div>
 
