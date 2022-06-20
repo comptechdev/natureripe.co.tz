@@ -24,7 +24,7 @@
      <div class="grid md:grid-cols-7">
          <div class="md:col-span-4">&nbsp;</div>
          <div class="md:col-span-3 py-16 md:py-36 pr-14 md:pr-32">
-             <h1 class="py-3 font-extrabold">THE HISTORY OF NATURERIPE® BRAND</h1>
+             <h1 class="py-3  font-extrabold">THE HISTORY OF NATURERIPE® BRAND</h1>
              <p>NATURERIPE® Brand products are made by NatureRipe Company, 
                  founded by NatureRipe in Year .
                   It was here that they developed the recipe for NATURERIPE® Original 
@@ -707,23 +707,28 @@
 
 
 <div class="container mx-auto py-20 bg-slate-50 px-5">
-    <h1 class="font-bold text-4xl text-center md:py-14">Our raw materials</h1>
+    <h1 class="font-bold text-4xl text-center py-7 md:py-14">Our raw materials</h1>
     <div class="grid md:grid-cols-3 gap-5">
         <div class="text-center p-7 shadow-2xl rounded-3xl ">
                 <h3 class="py-5 text-red-600 font-bold">Mango</h3>
-                <h2 class="text-3xl font-semibold">Every monday and wednesday</h2>
+                Our mango filling is elaborated with the best raw materials 
+                and the most appropriate facilities for fruit processing. Enjoy it's taste!</p>
                 <img src="{{ asset('img/mg.png') }}" alt="mg" class="p-10">
-        </div>
-        <div class="text-center p-7 shadow-2xl rounded-3xl">
-                <h3 class="py-5 text-red-600 font-bold">Ukwaju</h3>
-                <h2 class="text-3xl font-semibold">From Local Farmers</h2>
-                <img src="{{ asset('img/uk.png') }}" alt="mg" class="p-10">
         </div>
         <div class="text-center p-7 shadow-2xl rounded-3xl ">
                 <h3 class="py-5 text-red-600 font-bold">Groundnuts</h3>
-                <h2 class="text-3xl font-semibold">Every monday and wednesday</h2>
+                <p>Groundnuts are a popular source of food throughout the world, 
+                  consumed either as peanut butter or crushed and used for groundnut</p>
                 <img src="{{ asset('img/gn.png') }}" alt="mg" class="p-10">
         </div>
+        <div class="text-center p-7 shadow-2xl rounded-3xl">
+                <h3 class="py-5 text-red-600 font-bold">Ukwaju</h3>
+                <p>From Local Farmers, Tamarind is a tree. 
+                  Its partially dried fruit is used to make medicine and other products,
+                   you will be amazed what we make of it.</p>
+                <img src="{{ asset('img/uk.png') }}" alt="mg" class="p-10">
+        </div>
+
     </div>
 </div>
 
@@ -769,10 +774,10 @@
         </div>
         <div>
            <img src="{{ asset('img/two.png') }}" alt="one" class="py-10">
-           <h3 class="text-3xl font-semibold">Integrity and reliability</h3>
-           <p class="py-5">We establish open and honest relationships. 
-              We pursue relationships based on transparency, persistence, 
-              mutual trust and integrity with our employees,</p>
+           <h3 class="text-3xl font-semibold">Responsible and accountable</h3>
+           <p class="py-5">At Natureripe Kilimanjaro, we believe that our values are 
+                           critical to our own success, as well as our ability to
+                           effectively serve our customers.</p>
         </div>
     </div>
 

@@ -30,9 +30,10 @@
     <div class="grid grid-cols-8">
         <div class="col-span-2"></div>
         <div class="col-span-4 text-center pb-10 md:pb-24"><h1 class="font-bold text-4xl md:pb-5">About Us</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
-             at sit culpa vel iste officia placeat aliquid aut corporis,
-              unde alias delectus exercitationem sunt odit deserunt libero incidunt aperiam in.</p></div>
+        <p>The company maintains a nursery of mango seedlings and other horticultural fruits for sale.
+            Our company is also engaged in distribution of foodstuffs to supermarkets, variety stores,
+             fast food stores, restaurants,e.t.c We have been professional in the exporting, developing and trading of 
+             foodstuff for years. </p></div>
         <div class="col-span-2"></div>
     </div>
 </div>
@@ -57,19 +58,26 @@
     </div>
 </div>
 
-<div class="container mx-auto px-5">
-    <div class="grid md:grid-cols-7">
-        <div class="col-span-4 text-center" style="background-image: url('{{asset("img/mult.jpeg") }}');">
-               
-        </div>
-        <div class="text-center py-40 px-8 col-span-3">
-                <h3 class="py-5 text-red-600 font-bold">LIGHT THINGS UP</h3>
-                <h2 class="text-2xl font-semibold">
-                Nature Ripe Kilimanjaro BBQ Sauces onto all of your grilling favorites 
-                this summer. Find your favorite BBQ sauces, hot sauces and more in our online store.
-                </h2>
-        </div>
+<div class="container-fluid">
+    <div class="grid grid-cols-1 md:grid-cols-2">
+        
+            <div class="text-center bg-cover">
+            <img src="{{ asset('img/mult.jpeg') }}">
+            </div>
+            <div class="text-center py-8 md:py-20 px-8">
+                    <h3 class="py-5 text-red-600 font-bold">LIGHT THINGS UP</h3>
+                    <p class="md:text-2xl">
+                    We are pursuing superior quality is "Fresh, Safe and Healthy". 
+                    Your total satisfaction is our main objective. Welcome to contact
+                    us anytime and look forward to working with you. 
+                    Thanks for choosing Naturipe Kilimanjaro Limited, 
+                    we sincerely believe our further cooperation will be better and better!
+                    </p>
+            </div>
+    
+
     </div>
+
 </div>
 <x-website.body.section />
 
