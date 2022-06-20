@@ -113,7 +113,7 @@
     </div>
   </div>
         </div>
-        <div class="col-span-8 md:col-span-4 pt-28 justify-items-center">
+        <div class="col-span-8 md:col-span-4 pt-28 px-4 justify-items-center">
             <h2 class="text-2xl md:text-4xl font-bold text-gray-500">Address</h2>
             <p>NatureRipe Kilimanjaro Ltd (NKL)
                743 Mindu Str, <br>Upanga West. P.O. Box 5496</p>
