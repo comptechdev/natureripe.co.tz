@@ -4,13 +4,13 @@
     'name' => 'Laravel',
     'env' => 'local',
     'debug' => true,
-    'url' => 'http://localhost',
+    'url' => '127.0.0.1:8000',
     'asset_url' => NULL,
     'timezone' => 'UTC',
     'locale' => 'en',
     'fallback_locale' => 'en',
     'faker_locale' => 'en_US',
-    'key' => 'base64:fs+dx/350uAD4Bch1o5WyZSX3xnnNPUfHwSx+AHRfjw=',
+    'key' => 'base64:De91faks3OYHWqB8B/1etHwFa7aq3iIX49GyBsN2Z3M=',
     'cipher' => 'AES-256-CBC',
     'providers' => 
     array (
@@ -189,7 +189,7 @@
       'file' => 
       array (
         'driver' => 'file',
-        'path' => 'C:\\Users\\Derick\\Documents\\natureripe.co.tz\\storage\\framework/cache/data',
+        'path' => '/Users/Mark/Desktop/clients/Comptech/Projects/Career/Peach Technology/Projects/Sub/Nature Ripe/Development/natureripe-laravel/storage/framework/cache/data',
       ),
       'memcached' => 
       array (
@@ -284,7 +284,7 @@
         'port' => '3306',
         'database' => 'natureripe',
         'username' => 'root',
-        'password' => '',
+        'password' => 'root',
         'unix_socket' => '',
         'charset' => 'utf8mb4',
         'collation' => 'utf8mb4_unicode_ci',
@@ -304,7 +304,7 @@
         'port' => '3306',
         'database' => 'natureripe',
         'username' => 'root',
-        'password' => '',
+        'password' => 'root',
         'charset' => 'utf8',
         'prefix' => '',
         'prefix_indexes' => true,
@@ -319,7 +319,7 @@
         'port' => '3306',
         'database' => 'natureripe',
         'username' => 'root',
-        'password' => '',
+        'password' => 'root',
         'charset' => 'utf8',
         'prefix' => '',
         'prefix_indexes' => true,
@@ -360,14 +360,14 @@
       'local' => 
       array (
         'driver' => 'local',
-        'root' => 'C:\\Users\\Derick\\Documents\\natureripe.co.tz\\storage\\app',
+        'root' => '/Users/Mark/Desktop/clients/Comptech/Projects/Career/Peach Technology/Projects/Sub/Nature Ripe/Development/natureripe-laravel/storage/app',
         'throw' => false,
       ),
       'public' => 
       array (
         'driver' => 'local',
-        'root' => 'C:\\Users\\Derick\\Documents\\natureripe.co.tz\\storage\\app/public',
-        'url' => 'http://localhost/storage',
+        'root' => '/Users/Mark/Desktop/clients/Comptech/Projects/Career/Peach Technology/Projects/Sub/Nature Ripe/Development/natureripe-laravel/storage/app/public',
+        'url' => '127.0.0.1:8000/storage',
         'visibility' => 'public',
         'throw' => false,
       ),
@@ -386,7 +386,7 @@
     ),
     'links' => 
     array (
-      'C:\\Users\\Derick\\Documents\\natureripe.co.tz\\public\\storage' => 'C:\\Users\\Derick\\Documents\\natureripe.co.tz\\storage\\app/public',
+      '/Users/Mark/Desktop/clients/Comptech/Projects/Career/Peach Technology/Projects/Sub/Nature Ripe/Development/natureripe-laravel/public/storage' => '/Users/Mark/Desktop/clients/Comptech/Projects/Career/Peach Technology/Projects/Sub/Nature Ripe/Development/natureripe-laravel/storage/app/public',
     ),
   ),
   'fortify-options' => 
@@ -480,13 +480,13 @@
       'single' => 
       array (
         'driver' => 'single',
-        'path' => 'C:\\Users\\Derick\\Documents\\natureripe.co.tz\\storage\\logs/laravel.log',
+        'path' => '/Users/Mark/Desktop/clients/Comptech/Projects/Career/Peach Technology/Projects/Sub/Nature Ripe/Development/natureripe-laravel/storage/logs/laravel.log',
         'level' => 'debug',
       ),
       'daily' => 
       array (
         'driver' => 'daily',
-        'path' => 'C:\\Users\\Derick\\Documents\\natureripe.co.tz\\storage\\logs/laravel.log',
+        'path' => '/Users/Mark/Desktop/clients/Comptech/Projects/Career/Peach Technology/Projects/Sub/Nature Ripe/Development/natureripe-laravel/storage/logs/laravel.log',
         'level' => 'debug',
         'days' => 14,
       ),
@@ -538,7 +538,7 @@
       ),
       'emergency' => 
       array (
-        'path' => 'C:\\Users\\Derick\\Documents\\natureripe.co.tz\\storage\\logs/laravel.log',
+        'path' => '/Users/Mark/Desktop/clients/Comptech/Projects/Career/Peach Technology/Projects/Sub/Nature Ripe/Development/natureripe-laravel/storage/logs/laravel.log',
       ),
     ),
   ),
@@ -603,7 +603,7 @@
       'theme' => 'default',
       'paths' => 
       array (
-        0 => 'C:\\Users\\Derick\\Documents\\natureripe.co.tz\\resources\\views/vendor/mail',
+        0 => '/Users/Mark/Desktop/clients/Comptech/Projects/Career/Peach Technology/Projects/Sub/Nature Ripe/Development/natureripe-laravel/resources/views/vendor/mail',
       ),
     ),
   ),
@@ -670,7 +670,7 @@
       2 => '127.0.0.1',
       3 => '127.0.0.1:8000',
       4 => '::1',
-      5 => 'localhost',
+      5 => '127.0.0.1:8000',
     ),
     'guard' => 
     array (
@@ -709,7 +709,7 @@
     'lifetime' => '120',
     'expire_on_close' => false,
     'encrypt' => false,
-    'files' => 'C:\\Users\\Derick\\Documents\\natureripe.co.tz\\storage\\framework/sessions',
+    'files' => '/Users/Mark/Desktop/clients/Comptech/Projects/Career/Peach Technology/Projects/Sub/Nature Ripe/Development/natureripe-laravel/storage/framework/sessions',
     'connection' => NULL,
     'table' => 'sessions',
     'store' => NULL,
@@ -729,9 +729,9 @@
   array (
     'paths' => 
     array (
-      0 => 'C:\\Users\\Derick\\Documents\\natureripe.co.tz\\resources\\views',
+      0 => '/Users/Mark/Desktop/clients/Comptech/Projects/Career/Peach Technology/Projects/Sub/Nature Ripe/Development/natureripe-laravel/resources/views',
     ),
-    'compiled' => 'C:\\Users\\Derick\\Documents\\natureripe.co.tz\\storage\\framework\\views',
+    'compiled' => '/Users/Mark/Desktop/clients/Comptech/Projects/Career/Peach Technology/Projects/Sub/Nature Ripe/Development/natureripe-laravel/storage/framework/views',
   ),
   'inertia' => 
   array (
@@ -745,7 +745,7 @@
       'ensure_pages_exist' => true,
       'page_paths' => 
       array (
-        0 => 'C:\\Users\\Derick\\Documents\\natureripe.co.tz\\resources\\js/Pages',
+        0 => '/Users/Mark/Desktop/clients/Comptech/Projects/Career/Peach Technology/Projects/Sub/Nature Ripe/Development/natureripe-laravel/resources/js/Pages',
       ),
       'page_extensions' => 
       array (
@@ -829,7 +829,7 @@
     array (
     ),
     'enable_runnable_solutions' => true,
-    'remote_sites_path' => 'C:\\Users\\Derick\\Documents\\natureripe.co.tz',
+    'remote_sites_path' => '/Users/Mark/Desktop/clients/Comptech/Projects/Career/Peach Technology/Projects/Sub/Nature Ripe/Development/natureripe-laravel',
     'local_sites_path' => '',
     'housekeeping_endpoint_prefix' => '_ignition',
   ),
