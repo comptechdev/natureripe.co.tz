@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container mx-auto py-10">
-      <h1 class="text-start text-3xl md:text-7xl font-black">{{ $meal->name }}</h1>
+      <h1 class="text-start text-2xl md:text-7xl font-black">{{ $meal->name }}</h1>
 </div>
 <div class="container mx-auto">
     <div class="grid grid-cols-1">
@@ -13,7 +13,7 @@
 <div class="container mx-auto">
   <div class="grid md:grid-cols-2 py-5 md:py-10">
       <div class="py-10 md:py-2">
-          <h1 class="text-start text-3xl font-black pb-5">INGREDIENTS</h1>
+          <h1 class="text-start md:text-2xl font-black pb-5">INGREDIENTS</h1>
           @foreach ($meal->ingridients as $ingridient)
               @isset($ingridient->ingridientable->product)
                 <p class="pr-10 md:text-2xl">{{ $ingridient->ingridientable->product->name }}<p>
@@ -25,7 +25,7 @@
           
       </div>
       <div class="py-4">
-            <h1 class="text-start text-3xl font-black pb-5">PREPARATION</h1>
+            <h1 class="text-start text-2xl font-black pb-5">PREPARATION</h1>
             {!! $meal->preparation !!}
 
                     {{-- <ol class="list-decimal text-2xl">
@@ -37,7 +37,7 @@
 
   <div class="max-w-5xl mx-auto">
     <div class="container mx-auto py-16">
-        <h1 class="text-5xl font-extrabold pt-16 pb-10">Similar Products</h1>
+        <h1 class="text-3xl font-extrabold pt-16 pb-10">Similar Products</h1>
         <p class="text-2xl pb-10">It Goes better with this meals.</p>
     </div>
 
@@ -46,7 +46,7 @@
             <div class="shrink-0 w-60 inline-block rounded overflow-hidden border-2 origin-bottom-left transform hover:-rotate-3 hover:shadow-lg" x-on:click="window.location = '{{ route("website.sauce", ["product" => $product]) }}'">
                 <img class="w-full" src="{{ Storage::url($product->featured_image) }}" alt="eggs">
                 <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">{{ $product->name }}</div>
+                    <div class="font-bold text-2xl mb-2">{{ $product->name }}</div>
                     {{-- {!! $meal->description !!} --}}
                 </div>
             </div>

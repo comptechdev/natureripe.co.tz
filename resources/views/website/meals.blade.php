@@ -4,7 +4,7 @@
 <div class="max-w-5xl mx-auto">
     @foreach ($collections as $collection)
         <div class="container mx-auto py-16" x-data>
-            <h1 class="text-5xl font-extrabold pt-16 pb-10">{{ $collection->name }}</h1>
+            <h1 class="text-3xl font-extrabold pt-16 pb-10">{{ $collection->name }}</h1>
             <p class="text-2xl pb-10">{{ $collection->description }}</p>
             <div class="flex flex-nowrap gap-5 overflow-x-scroll">
                 @foreach ($collection->meals as $meal)
