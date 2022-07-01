@@ -7,15 +7,15 @@
             <img src="{{ Storage::url($product->featured_image) }}" class="w-full lg:w-60" alt="">
         </div>
         <div class="px-10">
-            <h1 class="text-3xl font-extrabold pt-16 pb-10">{{ $product->name }}</h1>
+            <h1 class="text-2xl font-extrabold pt-16 pb-10">{{ $product->name }}</h1>
             <p class="text-lg mt-2">{{ $product->description }}</p>
         </div>
     </div>
 </div>
 
 <div class="container mx-auto py-16">
-    <h1 class="text-3xl font-extrabold pt-16 pb-10">{{ $product->name }} Meals</h1>
-    <p class="text-2xl pb-10">Make it all delicious: fun food & menu ideas for holidays, parties, events and everyday meals.</p>
+    <h1 class="text-2xl font-extrabold pt-16 pb-10">{{ $product->name }} Meals</h1>
+    <p class="pb-10">Make it all delicious: fun food & menu ideas for holidays, parties, events and everyday meals.</p>
     <div class="grid md:grid-cols-4 gap-5">
         @foreach ($product->meals as $meal)
         <a href="{{ route("website.meal", ["meal" => $meal]) }}}}" class="max-w-sm rounded overflow-hidden border-2 origin-bottom-left transform hover:-rotate-3 hover:shadow-lg">

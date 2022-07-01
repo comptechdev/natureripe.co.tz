@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container mx-auto py-10">
-      <h1 class="text-start text-2xl md:text-7xl font-black">{{ $meal->name }}</h1>
+      <h1 class="text-start text-2xl md:text-5xl font-black">{{ $meal->name }}</h1>
 </div>
 <div class="container mx-auto">
     <div class="grid grid-cols-1">
@@ -37,8 +37,8 @@
 
   <div class="max-w-5xl mx-auto">
     <div class="container mx-auto py-16">
-        <h1 class="text-3xl font-extrabold pt-16 pb-10">Similar Products</h1>
-        <p class="text-2xl pb-10">It Goes better with this meals.</p>
+        <h1 class="text-2xl font-extrabold pt-16 pb-10">Similar Products</h1>
+        <p class="text-xl pb-10">It Goes better with this meals.</p>
     </div>
 
     <div class="flex flex-nowrap gap-5 overflow-x-scroll" x-data>
