@@ -779,6 +779,7 @@
     </div>
 
 </div>
+<x-website.body.patners />
 
 
 
