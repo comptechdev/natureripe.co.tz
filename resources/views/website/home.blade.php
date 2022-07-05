@@ -28,16 +28,18 @@
 </div>
 
 
-<header class="flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover custom-img" style="background-image:url('{{asset("img/htr.png") }}') ;">
+<header class="flex items-center justify-center py-10 mb-12 bg-fixed bg-center bg-cover custom-img" style="background-image:url('{{asset("img/htr.png") }}') ;">
   <div class="p-5 text-2xl text-white bg-opacity-50 rounded-xl">
   <div class="grid grid-cols-8">
-        <div class="col-span-2"></div>
-        <div class="col-span-4 text-center pb-10 md:pb-24"><h1 class="font-bold md:text-4xl md:pb-5">About Us</h1>
-        <p>The company maintains a nursery of mango seedlings and other horticultural fruits for sale.
-            Our company is also engaged in distribution of foodstuffs to supermarkets, variety stores,
-             fast food stores, restaurants,e.t.c We have been professional in the exporting, developing and trading of 
-             foodstuff for years. </p></div>
-        <div class="col-span-2"></div>
+        <div class="lg:col-span-2"></div>
+        <div class="col-span-8 lg:col-span-4 text-center"><h1 class="font-bold md:text-4xl md:pb-5">About Us</h1>
+        <div class="space-y-3">
+            <p>The company maintains a nursery of mango seedlings and other horticultural fruits for sale.</p>
+            <p>Our company is also engaged in distribution of foodstuffs to supermarkets, variety stores, fast food stores, restaurants,e.t.c </p>
+            <p>We have been professional in the exporting, developing and trading of foodstuff for years.</p>
+        </div>
+        </div>
+        <div class="lg:col-span-2"></div>
     </div>
   </div>
 </header>
