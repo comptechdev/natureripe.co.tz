@@ -780,6 +780,7 @@
 
 </div>
 
+<x-website.body.patners />
 
 
 <!-- ====== About Section Start -->
