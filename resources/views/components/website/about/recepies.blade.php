@@ -5,7 +5,7 @@
         </div> 
         <div class="w-64 bg-white p-10 -ml-10">
             <div class="">
-                <h1 class="{{ $titlestyle??'' }}">{!! $title??'' !!}</h1>
+                <h2 class="{{ $titlestyle??'' }}">{!! $title??'' !!}</h2>
                 <P class="{{ $descriptionstyle??'' }}">{{ $description??'' }}</P>
             </div>
         </div>
