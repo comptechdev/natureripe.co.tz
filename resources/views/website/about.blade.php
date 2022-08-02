@@ -34,6 +34,7 @@
          </div>
      </div>
 </div>
+
 <div class="grid grid-cols-1 md:grid-cols-2">
     <div class="flex justify-center">
         <img src="{{ asset('img/a1.png') }}" alt="1516404" class="w-full">
@@ -60,6 +61,7 @@
         </div>
     </div>
 </div>
+
 <section class="pt-20 px-16 lg:pt-[120px] pb-12 lg:pb-[90px] overflow-hidden">
    <div class="container">
       <div class="flex flex-wrap justify-between items-center -mx-4">
@@ -702,7 +704,6 @@
    </div>
 </section>
 
-
 <div class="container mx-auto py-20 bg-slate-50 px-5">
     <h1 class="font-bold text-4xl text-center py-7 md:py-14">Our raw materials</h1>
     <div class="grid md:grid-cols-3 gap-5">
@@ -782,10 +783,8 @@
 
 <x-website.body.patners />
 
-
 <!-- ====== About Section Start -->
 
 <!-- ====== About Section End -->
-
 
 @endsection
