@@ -3,8 +3,8 @@
     <div class="flex justify-center gap-10 md:gap-32 py-10">   
     <div><img src="{{ asset('img/p22.png') }}" alt=""></div>
     <div><img src="{{ asset('img/p221.png') }}" alt=""></div>
-    <div><img src="{{ asset('img/5.png') }}" alt=""></div>
-    <div><img src="{{ asset('img/p222.png') }}" alt=""></div>
+    <div><img src="{{ asset('img/tafopa.png') }}" alt=""></div>
+    <div><img src="{{ asset('img/amagro.png') }}" alt=""></div>
     <div><img src="{{ asset('img/p44.png') }}" alt=""></div>
     </div>
 </div>
