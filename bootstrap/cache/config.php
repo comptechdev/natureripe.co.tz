@@ -4,7 +4,7 @@
     'name' => 'Laravel',
     'env' => 'local',
     'debug' => true,
-    'url' => 'http://localhost',
+    'url' => 'http://localhost:8000',
     'asset_url' => NULL,
     'timezone' => 'UTC',
     'locale' => 'en',
@@ -367,7 +367,7 @@
       array (
         'driver' => 'local',
         'root' => 'C:\\Users\\Derick\\Documents\\natureripe.co.tz\\storage\\app/public',
-        'url' => 'http://localhost/storage',
+        'url' => 'http://localhost:8000/storage',
         'visibility' => 'public',
         'throw' => false,
       ),
@@ -670,7 +670,7 @@
       2 => '127.0.0.1',
       3 => '127.0.0.1:8000',
       4 => '::1',
-      5 => 'localhost',
+      5 => 'localhost:8000',
     ),
     'guard' => 
     array (
