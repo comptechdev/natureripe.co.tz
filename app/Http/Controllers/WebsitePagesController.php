@@ -21,6 +21,9 @@ class WebsitePagesController extends Controller
     public function aboutPage() {
         return view("website.about");
     }
+    public function galeryPage() {
+        return view("website.galery");
+    }
 
     public function contactsPage() {
         return view("website.contacts");

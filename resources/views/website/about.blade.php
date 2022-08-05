@@ -37,7 +37,7 @@
 
 <div class="grid grid-cols-1 md:grid-cols-2">
     <div class="flex justify-center">
-        <img src="{{ asset('img/a1.png') }}" alt="1516404" class="w-full">
+        <img src="{{ asset('img/abt5.png') }}" alt="1516404" class="w-full">
         <div class="absolute text-center pt-5 md:pt-10 w-3/4 md:w-2/5 text-white ">
             <h1 class="text-center text-xl md:text-4xl font-black">RIPE VISION</h1>
             <p class="text-center text-sm md:text-2xl pt-5">We foresee NatureRipe Kilimanjaro Ltd to be recognized leaders in Africa for fresh Tanzanian fruits and savory products with reputation that is claimed
@@ -77,7 +77,7 @@
                   </div>
                   <div class="py-3 sm:py-4">
                      <img
-                        src="{{ asset('img/kiwanda.jpeg') }}"
+                        src="{{ asset('img/embe2.png') }}"
                         alt=""
                         class="rounded-2xl w-full"
                         />
@@ -86,7 +86,7 @@
                <div class="w-full xl:w-1/2 px-3 sm:px-4">
                   <div class="my-4 relative z-10">
                      <img
-                        src="{{ asset('img/kwnd.jpeg') }}"
+                        src="{{ asset('img/embe1.png') }}"
                         alt=""
                         class="rounded-2xl w-full"
                         />
@@ -712,12 +712,18 @@
                 Our mango filling is elaborated with the best raw materials 
                 and the most appropriate facilities for fruit processing. Enjoy it's taste!</p>
                 <img src="{{ asset('img/mg.png') }}" alt="mg" class="p-10">
+                <div class="flex space-x-2 justify-center">
+                    <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" class="inline-block px-6 py-2.5 bg-red-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-red-600 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out "><a href="{{ route('website.galery') }}"> See more</a></button>
+                </div>
         </div>
         <div class="text-center p-7 shadow-2xl rounded-3xl ">
                 <h3 class="py-5 text-red-600 font-bold">Groundnuts</h3>
                 <p>Groundnuts are a popular source of food throughout the world, 
                   consumed either as peanut butter or crushed and used for groundnut</p>
                 <img src="{{ asset('img/gn.png') }}" alt="mg" class="p-10">
+                <div class="flex space-x-2 justify-center">
+                    <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" class="inline-block px-6 py-2.5 bg-red-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-red-600 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out "><a href="#"> See more</a></button>
+                </div>
         </div>
         <div class="text-center p-7 shadow-2xl rounded-3xl">
                 <h3 class="py-5 text-red-600 font-bold">Ukwaju</h3>
@@ -725,6 +731,9 @@
                   Its partially dried fruit is used to make medicine and other products,
                    you will be amazed what we make of it.</p>
                 <img src="{{ asset('img/uk.png') }}" alt="mg" class="p-10">
+                <div class="flex space-x-2 justify-center">
+                    <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" class="inline-block px-6 py-2.5 bg-red-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-red-600 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out "><a href="#"> See more</a></button>
+                </div>
         </div>
 
     </div>
