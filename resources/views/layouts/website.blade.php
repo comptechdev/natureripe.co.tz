@@ -22,6 +22,11 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <style>
+        ::-webkit-scrollbar {
+    display: none;
+   }
+    </style>
 </head>
 <body>
 
