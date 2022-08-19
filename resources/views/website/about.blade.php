@@ -1,25 +1,6 @@
 @extends('layouts.website')
 
 @section('content')
-<!-- <div class="container mx-auto">
-  <div class="grid md:grid-cols-2 py-5 md:py-10">
-      <div class="py-10 md:py-2">
-          <h1 class="text-2xl md:text-4xl pb-3 md:pb-5 pr-48 font-bold md:font-bold">We are a chain of stores with over 3500 points of sale across UK</h1>
-          <p class="pr-10 md:text-2xl">Duis egestas, felis sit amet mattis cursus, ligula justo tempor diam, 
-            id pellentesque odio dui eu nisi. Quisque rhoncus leo sed eleifend consequat.ligula justo tempor diam, 
-            id pellentesque odio dui eu nisi. Quisque rhoncus leo sed eleifend consequat.ligula justo tempor diam, 
-            id pellentesque odio dui eu nisi. Quisque rhoncus leo sed eleifend consequat.</p>
-         <div class="pt-10">
-            <button class="bg-transparent hover:bg-red-600 text-red-600 font-semibold hover:text-white py-2 px-12 border border-red-600 hover:border-transparent rounded">
-                Fint Store
-            </button>
-        </div>
-      </div>
-      <div class="pt-2">
-          <img src="{{ asset('img/ab1.webp') }}" alt="">
-      </div>
-  </div>
-</div>   -->
 <div class="container-fluid  h-screen bg-auto md:bg-contain" style="background-image: url('{{asset("img/htr.png") }}'); background-size: cover;background-repeat: no-repeat;background-position:center;">
    <div class="grid md:grid-cols-7">
       <div class="md:col-span-4">&nbsp;</div>
@@ -281,7 +262,7 @@
             mutual trust and integrity with our employees,</p>
       </div>
       <div>
-         <img src="{{ asset('img/two.png') }}" alt="one" class="py-10">
+         <img src="{{ asset('img/three.png') }}" alt="one" class="py-10">
          <h3 class="text-3xl font-semibold">Responsible and accountable</h3>
          <p class="py-5">At Natureripe Kilimanjaro, we believe that our values are
             critical to our own success, as well as our ability to
@@ -292,9 +273,5 @@
 </div>
 
 <x-website.body.patners />
-
-<!-- ====== About Section Start -->
-
-<!-- ====== About Section End -->
 
 @endsection
