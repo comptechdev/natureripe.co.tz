@@ -270,10 +270,6 @@
    </div>
 </div>
 <x-website.body.patners />
-<<<<<<< HEAD
 <!-- ====== About Section Start -->
 <!-- ====== About Section End -->
-=======
-
->>>>>>> derick
 @endsection
