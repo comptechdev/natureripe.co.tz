@@ -4,8 +4,6 @@
 
 <div class="container">
 
-<<<<<<< HEAD
-=======
 <div x-data=" {
    openTab: 1,
    activeClasses: 'bg-primary text-red',
@@ -31,7 +29,6 @@
    </div>
    <div>
       <div x-show="openTab === 1" class="text-body-color text-base leading-relaxed p-6">
->>>>>>> derick
 <section class="overflow-hidden text-gray-700 ">
   <div class="container px-5 py-2 mx-auto lg:pt-12 lg:px-32">
     <div class="flex flex-wrap -m-1 md:-m-2">
@@ -80,11 +77,6 @@
     </div>
   </div>
 </section>
-<<<<<<< HEAD
-
-</div>
-
-=======
       </div>
       <div x-show="openTab === 2" class="text-body-color text-base leading-relaxed p-6" style="display: none;">
       <section class="overflow-hidden text-gray-700 ">
@@ -146,5 +138,4 @@
 
 
 <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
->>>>>>> derick
 @endsection

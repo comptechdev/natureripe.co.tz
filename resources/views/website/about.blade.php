@@ -287,13 +287,8 @@
             effectively serve our customers.</p>
       </div>
    </div>
-
 </div>
-
 <x-website.body.patners />
-
 <!-- ====== About Section Start -->
-
 <!-- ====== About Section End -->
-
 @endsection
